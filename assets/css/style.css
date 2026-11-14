@@ -298,6 +298,24 @@ a { color: var(--gold-hi); }
 .empty { text-align: center; color: var(--muted); padding: 40px 0; }
 .linklike { background: none; border: 0; padding: 0; color: var(--gold-hi); font: inherit; text-decoration: underline; cursor: pointer; }
 
+/* ---------- contact ---------- */
+.contact-inner { display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 28px 48px; }
+.contact-list { display: flex; flex-wrap: wrap; gap: 12px; }
+.contact-btn { min-height: 60px; padding: 10px 22px 10px 18px; gap: 14px; text-align: left; }
+.contact-btn svg { width: 22px; height: 22px; flex: none; fill: none; stroke: var(--gold); stroke-width: 1.6; stroke-linejoin: round; }
+.contact-text { display: flex; flex-direction: column; gap: 2px; }
+.contact-name { letter-spacing: .06em; }
+.contact-num { font-family: var(--f-mono); font-weight: 400; font-size: 12.5px; letter-spacing: .02em; color: var(--muted); }
+.contact-btn:hover .contact-num { color: var(--parch); }
+@media (max-width: 400px) {
+  .topbar .nav { gap: 0; }
+  .topbar .nav a { padding: 8px 6px; letter-spacing: 0; }
+}
+@media (max-width: 560px) {
+  .contact-list { width: 100%; flex-direction: column; }
+  .contact-btn { justify-content: flex-start; }
+}
+
 /* ---------- footer ---------- */
 .footer { border-top: 1px solid var(--line); padding: 40px 0 48px; background: #0b0d10; }
 .footer-inner { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 20px 40px; }
