@@ -478,7 +478,15 @@ window.KELOMPOK = [
     dokumentasi: []
   },
   {
-    no: 16, bidang: "SEAL", judul: "", abstrak: "", kataKunci: [],
+    no: 16,
+    bidang: "SEAL",
+    judul: "Perancangan dan Pengembangan Aplikasi Open Pre-Order Merchandise Baju Merah Putih Telkom Berbasis Web sebagai Solusi Digitalisasi Pemesanan",
+    abstrak:
+      "Proses pemesanan Baju Merah Putih Telkom University yang masih mengandalkan Google Form dan pendataan melalui WhatsApp berpotensi menimbulkan kesalahan pencatatan, kesulitan memantau status pesanan, serta keterlambatan rekapitulasi data. " +
+      "Proyek ini merancang dan mengembangkan aplikasi Open Pre-Order (Open PO) merchandise berbasis web sebagai solusi digitalisasi pemesanan, melalui kolaborasi kelompok keahlian SEAL dan ORMAWA: ORMAWA berfokus pada pengelolaan merchandise dan kebutuhan operasional, sedangkan SEAL pada perancangan dan pengembangan sistem. " +
+      "Pengembangan meliputi identifikasi masalah dan kebutuhan pengguna, analisis kebutuhan dan perancangan sistem, implementasi aplikasi web, serta pengujian dan evaluasi. " +
+      "Aplikasi melayani dua jenis pengguna, pembeli dan admin, dengan fitur katalog merchandise, formulir pemesanan, pengelolaan periode Open PO, pemantauan status pesanan, dan dashboard admin untuk rekapitulasi data, sehingga pemesanan diharapkan lebih praktis, terstruktur, dan efisien.",
+    kataKunci: ["open pre-order", "merchandise", "digitalisasi", "aplikasi berbasis web", "SEAL", "ORMAWA"],
     anggota: [
       { nama: "Muhammad Rafiki Hannan", nim: "" },
       { nama: "Arfandika Syahputra", nim: "" },
@@ -492,7 +500,11 @@ window.KELOMPOK = [
       { nama: "Muhammad Wildan Arta", nim: "" },
       { nama: "Muhammad Kaysan Parsa Rifandiputra", nim: "" }
     ],
-    paper: "", luaran: [], dokumentasi: []
+    paper: "papers/kelompok-16.pdf",
+    luaran: [
+      { label: "Lampiran kelompok", url: "https://drive.google.com/drive/folders/17sOzAZsVy_W59eYQuzB5Ln2jyTGaQ8k4?usp=sharing" }
+    ],
+    dokumentasi: []
   },
   {
     no: 17,
