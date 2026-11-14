@@ -727,7 +727,7 @@ window.KELOMPOK = [
   },
   {
     no: 26,
-    bidang: "",
+    bidang: "SEAL",
     judul: "Analisis Perbandingan Kecepatan Algoritma Bubble Sort, Selection Sort, dan Insertion Sort pada Berbagai Ukuran dan Kondisi Data",
     abstrak:
       "Bubble Sort, Selection Sort, dan Insertion Sort memiliki kompleksitas waktu rata-rata yang sama, yaitu O(n²), sehingga sering dianggap setara. " +
