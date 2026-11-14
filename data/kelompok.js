@@ -96,7 +96,37 @@ window.KELOMPOK = [
   { no: 5, bidang: "", judul: "", abstrak: "", kataKunci: [], anggota: [], paper: "", luaran: [], dokumentasi: [] },
   { no: 6, bidang: "SEAL", judul: "", abstrak: "", kataKunci: [], anggota: [], paper: "", luaran: [], dokumentasi: [] },
   { no: 7, bidang: "DSIS", judul: "", abstrak: "", kataKunci: [], anggota: [], paper: "", luaran: [], dokumentasi: [] },
-  { no: 8, bidang: "TEKNOLOGI", judul: "", abstrak: "", kataKunci: [], anggota: [], paper: "", luaran: [], dokumentasi: [] },
+  {
+    no: 8,
+    bidang: "TEKNOLOGI",
+    judul: "Analisis Keterbatasan Aplikasi PKKMB dan Eksplorasi Teknologi Web Interaktif \"Campus Xplore\" sebagai Solusi Navigasi Berkelanjutan",
+    abstrak:
+      "Dokumen ini menyajikan analisis terhadap teknologi navigasi kampus saat ini dan mengeksplorasi purwarupa web antarmuka \"Campus Xplore\" sebagai inovasi masa depan. " +
+      "Sistem ini menerima masukan berupa interaksi klik pengguna pada elemen peta dan menghasilkan keluaran visual berupa detail informasi fasilitas kampus. " +
+      "Dari sudut pandang teknologi modern, aksesibilitas informasi harus bersifat inklusif dan berkelanjutan. " +
+      "Kesenjangan yang terjadi saat ini adalah sistem pemetaan kampus masih menggunakan aplikasi seluler khusus orientasi mahasiswa baru yang aksesnya ditutup setelah masa orientasi berakhir, membutuhkan proses instalasi, dan memiliki informasi gedung yang tidak komprehensif. " +
+      "Eksplorasi yang dilakukan berfokus pada pergeseran paradigma menuju antarmuka pemetaan digital berbasis web. " +
+      "Pengembangan purwarupa dilakukan pada sisi klien dengan memanfaatkan teknologi HTML, CSS, dan JavaScript untuk menerjemahkan titik koordinat lokasi menjadi jendela informasi responsif tanpa memerlukan komputasi basis data eksternal. " +
+      "Hasil eksperimen menunjukkan bahwa antarmuka web interaktif memberikan akses informasi yang jauh lebih cepat dan persisten dibandingkan aplikasi konvensional. " +
+      "Eksplorasi teknologi ini membuktikan bahwa masa depan navigasi publik terletak pada sistem berbasis peramban web yang tidak bergantung pada masa orientasi dan instalasi pihak ketiga.",
+    kataKunci: ["analisis teknologi", "aplikasi PKKMB", "Campus Xplore", "navigasi persisten", "purwarupa web"],
+    anggota: [
+      { nama: "Marami Nailuridho", nim: "" },
+      { nama: "Mufidah Afifah", nim: "" },
+      { nama: "Muhammad Daniel Amsyar", nim: "" },
+      { nama: "Abidzar Alghifari", nim: "" },
+      { nama: "Satria Abdillah Mohamad", nim: "" },
+      { nama: "Madtrope'i Putra Andoki", nim: "" },
+      { nama: "Divanca Jadzia Hasan", nim: "" },
+      { nama: "Raphael Kendra Aryasatya", nim: "" },
+      { nama: "Imanuel Denile Berfy Felix Bombang", nim: "" },
+      { nama: "Nafidhiya Alistiani", nim: "" },
+      { nama: "Fadhlan Akbar Shobari", nim: "" }
+    ],
+    paper: "papers/kelompok-08.pdf",
+    luaran: [],
+    dokumentasi: []
+  },
   { no: 9, bidang: "DSIS", judul: "", abstrak: "", kataKunci: [], anggota: [], paper: "", luaran: [], dokumentasi: [] },
   { no: 10, bidang: "", judul: "", abstrak: "", kataKunci: [], anggota: [], paper: "", luaran: [], dokumentasi: [] },
   { no: 11, bidang: "ORMAWA", judul: "", abstrak: "", kataKunci: [], anggota: [], paper: "", luaran: [], dokumentasi: [] },
