@@ -292,21 +292,36 @@ window.KELOMPOK = [
     paper: "", luaran: [], dokumentasi: []
   },
   {
-    no: 12, bidang: "SEAL", judul: "", abstrak: "", kataKunci: [],
+    no: 12,
+    bidang: "SEAL",
+    judul: "Perancangan Website \"PortalInformasi\" Pendaftaran UKM dan Laboratorium di Telkom University untuk Mempermudah Akses Informasi Mahasiswa",
+    abstrak:
+      "Mahasiswa memiliki kesempatan untuk mengembangkan minat dan kemampuan melalui kegiatan di luar perkuliahan, misalnya dengan bergabung dalam Unit Kegiatan Mahasiswa (UKM) atau laboratorium. " +
+      "Namun, informasi pendaftaran dari setiap organisasi dan laboratorium dapat ditemukan melalui media yang berbeda-beda. " +
+      "Mahasiswa perlu memeriksa berbagai sumber untuk mengetahui kesempatan yang sedang dibuka, sehingga informasi dapat berisiko terlewat. " +
+      "Penulisan ini mengusulkan website \"PortalInformasi\" yang mengumpulkan pengumuman pendaftaran UKM dan laboratorium dalam satu platform. " +
+      "Perancangan difokuskan pada kebutuhan mahasiswa untuk melihat daftar, mencari informasi, membaca persyaratan dan periode pendaftaran, serta membuka tautan pendaftaran resmi. " +
+      "Tahapan pengerjaan meliputi identifikasi masalah, analisis kebutuhan, perancangan alur sistem, dan rancangan antarmuka.",
+    kataKunci: ["akses informasi", "pendaftaran", "UKM", "laboratorium", "website"],
     anggota: [
-      { nama: "Ahmad Rifki Dwi Putra Singgih", nim: "" },
-      { nama: "Muhamad Novran Razak", nim: "" },
-      { nama: "Olivia Cahya Daniswara", nim: "" },
-      { nama: "Mohamad Fakhri Saleh", nim: "" },
-      { nama: "Rafli Arya Adiyatma", nim: "" },
-      { nama: "Mahadivika Iman Nasri", nim: "" },
-      { nama: "Asar Puja Arjuna Sembiring", nim: "" },
       { nama: "Lazhi Nadri Ramadhan", nim: "" },
+      { nama: "Olivia Cahya Daniswara", nim: "" },
       { nama: "Arya Awal Adriansyah", nim: "" },
       { nama: "Mochamad Rizkyka Zainal Rafi'i", nim: "" },
+      { nama: "Ahmad Rifki Dwi Putra Singgih", nim: "" },
+      { nama: "Muhamad Novran Razak", nim: "" },
+      { nama: "Mohamad Fakhri Saleh", nim: "" },
+      { nama: "Rafli Arya Adiyatma", nim: "" },
+      { nama: "Asar Puja Arjuna Sembiring", nim: "" },
+      { nama: "Mahadivika Iman Nasri", nim: "" },
       { nama: "Muhammad Gavino Indra Putra", nim: "" }
     ],
-    paper: "", luaran: [], dokumentasi: []
+    paper: "papers/kelompok-12.pdf",
+    luaran: [
+      { label: "Website PortalInformasi", url: "https://portalinformasi-paper-perancangan-website-pendaft.ai.studio/" },
+      { label: "Website paper", url: "https://portalinformasi-mahasiswa.ai.studio/" }
+    ],
+    dokumentasi: []
   },
   {
     no: 13, bidang: "TEKNOLOGI", judul: "", abstrak: "", kataKunci: [],
@@ -377,21 +392,37 @@ window.KELOMPOK = [
     paper: "", luaran: [], dokumentasi: []
   },
   {
-    no: 17, bidang: "SEAL", judul: "", abstrak: "", kataKunci: [],
+    no: 17,
+    bidang: "SEAL",
+    judul: "Perancangan Sistem Lost and Found Telkom University",
+    abstrak:
+      "Kehilangan dan penemuan barang di lingkungan perguruan tinggi merupakan permasalahan yang sering terjadi. " +
+      "Informasi mengenai barang hilang maupun barang yang ditemukan dapat tersebar melalui berbagai media sehingga sulit ditemukan kembali dan dikelola secara terpusat. " +
+      "Kondisi tersebut dapat menyulitkan mahasiswa dalam melaporkan, mencari, dan menemukan informasi barang. " +
+      "Sistem Lost and Found yang terorganisasi diperlukan untuk mempermudah pertukaran informasi mengenai barang hilang dan ditemukan di lingkungan Telkom University. " +
+      "Penelitian ini mengembangkan website Lost and Found yang ditujukan bagi civitas akademika Telkom University. " +
+      "Sistem menyediakan fasilitas untuk melaporkan barang hilang dan barang ditemukan, menampilkan informasi barang, serta membantu pengguna mencari barang berdasarkan informasi yang tersedia. " +
+      "Sistem yang dikembangkan diuji untuk mengetahui kesesuaian fungsi dan kemudahan penggunaannya. " +
+      "Hasil pengujian menunjukkan tingkat keberhasilan fungsi dan pengalaman penggunaan sistem berdasarkan skenario pengujian yang dilakukan. " +
+      "Hasil tersebut digunakan untuk mengidentifikasi kelebihan dan kekurangan sistem sebagai dasar pengembangan lebih lanjut.",
+    kataKunci: ["lost and found", "website", "usability", "Telkom University", "sistem informasi"],
     anggota: [
-      { nama: "Rafi Alghifari", nim: "" },
+      { nama: "Airlangga Rizkytama", nim: "" },
       { nama: "Aishara Alula Myiesha Jenna", nim: "" },
-      { nama: "Mochamad Ghifary Soleiman", nim: "" },
-      { nama: "Teuku Fawwaz Alwanda", nim: "" },
-      { nama: "Farros Hanif Syawaludien", nim: "" },
-      { nama: "Muhammad Yusuf Abdurrahman", nim: "" },
-      { nama: "Airlangga Rizkytama Putra Widodo", nim: "" },
       { nama: "Dennis Hernian Majid", nim: "" },
       { nama: "Fahri Putra Yonki", nim: "" },
-      { nama: "Muhamad Yolan Maulana", nim: "" },
-      { nama: "M. Luthfi Adam Alaqla", nim: "" }
+      { nama: "Farros Hanif Syawaludien", nim: "" },
+      { nama: "Mochamad Ghifary Soleiman", nim: "" },
+      { nama: "Muhammad Yolan Maulana", nim: "" },
+      { nama: "Rafi Alghifari", nim: "" },
+      { nama: "Robby Hidayat", nim: "" },
+      { nama: "Teuku Fawwaz Alwanda", nim: "" }
     ],
-    paper: "", luaran: [], dokumentasi: []
+    paper: "papers/kelompok-17.pdf",
+    luaran: [
+      { label: "Website Temu Barang", url: "https://lost-and-found-telkom-university.vercel.app/" }
+    ],
+    dokumentasi: []
   },
   {
     no: 18, bidang: "SEAL", judul: "", abstrak: "", kataKunci: [],
