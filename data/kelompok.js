@@ -571,22 +571,35 @@ window.KELOMPOK = [
     dokumentasi: []
   },
   {
-    no: 20, bidang: "SEAL", judul: "", abstrak: "", kataKunci: [],
+    no: 20,
+    bidang: "SEAL",
+    judul: "TeamUp Belajar: Platform Pencari Partner Belajar & Lomba (Spesifikasi Kebutuhan Perangkat Lunak)",
+    abstrak:
+      "TeamUp Belajar adalah platform web yang mempertemukan pelajar SMA/SMK dan mahasiswa dengan partner belajar maupun rekan satu tim kompetisi. " +
+      "Platform ini menjawab empat masalah: sulitnya menemukan partner belajar yang sefrekuensi, gagal ikut lomba karena tidak punya tim atau tertinggal informasi, informasi lomba yang tersebar tanpa kurasi, dan tidak adanya cara terstruktur menilai kompetensi serta kecocokan jadwal calon rekan. " +
+      "Dokumen SKPL ini merinci empat kelas pengguna (Guest, Member, Penyelenggara Lomba, Administrator), 30 kebutuhan fungsional mulai dari pencocokan partner, katalog lomba terverifikasi, pembentukan tim, chat personal dan grup, hingga moderasi, serta kebutuhan non-fungsional seperti keamanan dan kepatuhan UU Pelindungan Data Pribadi. " +
+      "Rancangan dilengkapi use case diagram, sebelas skenario use case, class diagram, dan fitur sistem cerdas berupa pencocokan partner otomatis dan pengingat tenggat lomba.",
+    kataKunci: ["partner belajar", "lomba", "pembentukan tim", "SKPL", "aplikasi web"],
     anggota: [
-      { nama: "Mikaela Rosa Febriani Linggi", nim: "" },
-      { nama: "Nabila Nurul Alifah", nim: "" },
       { nama: "Dewa Gede Reksa Parama Aditya", nim: "" },
-      { nama: "Muh Alif Fayyaz", nim: "" },
-      { nama: "Arshanta Ayu Kusumaningtyas", nim: "" },
-      { nama: "Radhia Farrel Rabbani", nim: "" },
-      { nama: "Rizky Alvino Putra", nim: "" },
-      { nama: "Farrel Raza Sigak Amrullah", nim: "" },
       { nama: "Sayyid Rahman Al-Azis", nim: "" },
+      { nama: "Nabila Nurul Alifah", nim: "" },
       { nama: "Mochamad Dzikri Abbas", nim: "" },
-      { nama: "Zhafran Atthaurrahman Alezaryan", nim: "" },
-      { nama: "Muhammad Rabbani Al-Kautsar", nim: "" }
+      { nama: "Radhia Farrel Rabbani", nim: "" },
+      { nama: "Farrel Raza Sigak Amrullah", nim: "" },
+      { nama: "Rizky Alvino Putra", nim: "" },
+      { nama: "Muh Alif Fayyaz", nim: "" },
+      { nama: "Muhammad Rabbani Al-Kautsar", nim: "" },
+      { nama: "Arshanta Ayu Kusumaningtyas", nim: "" },
+      { nama: "Mikaela Rosa Febriani Linggi", nim: "" },
+      { nama: "Zhafran Atthaurrahman Alezaryan", nim: "" }
     ],
-    paper: "", luaran: [], dokumentasi: []
+    paper: "papers/kelompok-20.pdf",
+    luaran: [
+      { label: "Website TeamUp Belajar", url: "https://teamup-bay-mu.vercel.app/" },
+      { label: "Folder Drive", url: "https://drive.google.com/drive/u/1/folders/1e_bXl5FPg0GKgNL4DLs4fMqm3qjvSmhk" }
+    ],
+    dokumentasi: []
   },
   {
     no: 21,
