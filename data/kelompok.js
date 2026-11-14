@@ -659,7 +659,7 @@ window.KELOMPOK = [
       { nama: "Salsabila Ramadhina Danisti", nim: "" },
       { nama: "Ezzar Kaysan Gumilar", nim: "" },
       { nama: "Tiara Shaila Callysta", nim: "" },
-      { nama: "Fatih Akram Wicaksono", nim: "103012500318" },
+      { nama: "Fatih Akram Wicaksono", nim: "" },
       { nama: "Wildan Panji Maulana", nim: "" },
       { nama: "Tegar Sauma Ramdan Kurnia", nim: "" },
       { nama: "Nabila Hanif Nurfitriya", nim: "" },
