@@ -233,7 +233,8 @@ window.KELOMPOK = [
       { nama: "Raphael Kendra Aryasatya", nim: "" },
       { nama: "Imanuel Denile Berfy Felix Bombang", nim: "" },
       { nama: "Nafidhiya Alistiani", nim: "" },
-      { nama: "Fadhlan Akbar Shobari", nim: "" }
+      { nama: "Fadhlan Akbar Shobari", nim: "" },
+      { nama: "Miracle Ezekiel Rahakbauw", nim: "" }
     ],
     paper: "papers/kelompok-08.pdf",
     luaran: [],
