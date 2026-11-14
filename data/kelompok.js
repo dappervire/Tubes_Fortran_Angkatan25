@@ -121,21 +121,33 @@ window.KELOMPOK = [
     dokumentasi: []
   },
   {
-    no: 2, bidang: "SEAL", judul: "", abstrak: "", kataKunci: [],
+    no: 2,
+    bidang: "SEAL",
+    judul: "Orgo: Ruang Kerja Organisasi Mahasiswa untuk Mengelola Event, Kepanitiaan, Tugas, Dokumen, dan Keuangan",
+    abstrak:
+      "Orgo adalah aplikasi web yang membantu organisasi mahasiswa menyiapkan dan menjalankan kepanitiaan event dalam satu ruang kerja. " +
+      "Pengurus dan panitia bekerja pada data yang sama, mulai dari periode kepengurusan, event, divisi, tugas, dokumen, sampai keuangan, sehingga informasi tidak lagi tersebar di banyak grup chat dan berkas terpisah. " +
+      "Fitur utamanya meliputi dasbor dengan hitung mundur hari-H dan progres tugas, pembuatan event dari template, pengaturan divisi dan penempatan anggota, papan Kanban dengan durasi otomatis, " +
+      "repositori dokumen beserta alur pengajuan dan notulen yang dapat diubah menjadi tugas, serta keuangan yang mencakup RAB, arus kas berbukti, dan realisasi terhadap RAB. " +
+      "Hak akses diatur per peran (Admin, Ketua/BPH, Sekretaris, Bendahara, Kepala divisi, dan Anggota panitia), dan prototipe ini menyediakan akun demo untuk mencoba setiap peran.",
+    kataKunci: ["manajemen organisasi", "kepanitiaan", "kanban", "RAB", "hak akses berbasis peran", "aplikasi web"],
     anggota: [
-      { nama: "Athala Nabih Salman", nim: "" },
-      { nama: "Rafly Depinda", nim: "" },
-      { nama: "Arbani Ihsan", nim: "" },
-      { nama: "Alfandi Hassan", nim: "" },
-      { nama: "Muhammad Andhika Bagaskoro", nim: "" },
       { nama: "Ahmad Radhin Praditya", nim: "" },
-      { nama: "Muhammad Al Farel", nim: "" },
-      { nama: "Dylan Setyawan Ekapraja", nim: "" },
-      { nama: "Diego Fortuna", nim: "" },
+      { nama: "Alfandi Hassan", nim: "" },
+      { nama: "Arbani Ihsan", nim: "" },
+      { nama: "Athala Nabih Salman", nim: "" },
       { nama: "Aulya Zhalzhabilah", nim: "" },
-      { nama: "Cayseya Galeno Bilal Pratama", nim: "" }
+      { nama: "Cayseya Galeno Bilal Pratama", nim: "" },
+      { nama: "Diego Fortuna", nim: "" },
+      { nama: "Dylan Setyawan Ekapraja", nim: "" },
+      { nama: "Muhammad Al Farel", nim: "" },
+      { nama: "Muhammad Andhika Bagaskoro", nim: "" }
     ],
-    paper: "", luaran: [], dokumentasi: []
+    paper: "papers/kelompok-02.pdf",
+    luaran: [
+      { label: "Aplikasi Orgo", url: "https://tubesfortrankelompok2.pages.dev/" }
+    ],
+    dokumentasi: []
   },
   {
     no: 3, bidang: "SEAL", judul: "", abstrak: "", kataKunci: [],
@@ -172,21 +184,28 @@ window.KELOMPOK = [
     paper: "", luaran: [], dokumentasi: []
   },
   {
-    no: 5, bidang: "", judul: "", abstrak: "", kataKunci: [],
+    no: 5,
+    bidang: "DSIS",
+    judul: "Analisis Penerapan Kecerdasan Buatan dalam Personalisasi Sistem Rekomendasi Produk E-commerce",
+    abstrak:
+      "Kecerdasan buatan banyak dimanfaatkan platform e-commerce melalui sistem rekomendasi produk yang membantu pengguna menemukan produk sesuai minat dan preferensi belanjanya. " +
+      "Namun, sistem rekomendasi masih kesulitan mengenali kebutuhan pengguna baru yang belum memiliki riwayat interaksi atau pembelian yang cukup (cold-start problem), sehingga rekomendasinya kurang sesuai. " +
+      "Penulisan ini menggunakan metode tinjauan literatur terhadap enam artikel ilmiah tentang penerapan kecerdasan buatan dan sistem rekomendasi pada e-commerce. " +
+      "Berdasarkan kajian tersebut, diusulkan konsep personalisasi adaptif yang memanfaatkan pilihan awal pengguna berupa kategori dan rentang harga produk, lalu menyesuaikan rekomendasi secara bertahap melalui umpan balik dan interaksi pengguna. " +
+      "Hasil kajian menunjukkan bahwa keterbatasan informasi pengguna baru menjadi salah satu tantangan dalam personalisasi rekomendasi, dan efektivitas konsep yang diusulkan masih memerlukan pengujian lebih lanjut.",
+    kataKunci: ["kecerdasan buatan", "e-commerce", "sistem rekomendasi", "personalisasi adaptif", "pengguna baru"],
     anggota: [
-      { nama: "Muhammad Raihan Nurtoha", nim: "" },
-      { nama: "Muhammad Dzia Ilhaqi", nim: "" },
-      { nama: "Melvin Ivander", nim: "" },
-      { nama: "Qhikiza Alicia", nim: "" },
+      { nama: "Thania Evelina Munte", nim: "" },
       { nama: "Rethiesalya Eliyanta Putri", nim: "" },
       { nama: "Dwi Hania Irfani", nim: "" },
+      { nama: "Melvin Ivander", nim: "" },
       { nama: "Fanujiya Kidna Khasal", nim: "" },
-      { nama: "Thania Evelina Munte", nim: "" },
-      { nama: "Rionaldo Hutabarat", nim: "" },
-      { nama: "Akhrom Goniun Syakir", nim: "" },
-      { nama: "Raden Ishaq Malqi Ramadhan Alfriadi", nim: "" }
+      { nama: "Qhikiza Alicia", nim: "" },
+      { nama: "Muhammad Raihan Nurtoha", nim: "" }
     ],
-    paper: "", luaran: [], dokumentasi: []
+    paper: "papers/kelompok-05.pdf",
+    luaran: [],
+    dokumentasi: []
   },
   {
     no: 6, bidang: "SEAL", judul: "", abstrak: "", kataKunci: [],
@@ -206,7 +225,17 @@ window.KELOMPOK = [
     paper: "", luaran: [], dokumentasi: []
   },
   {
-    no: 7, bidang: "DSIS", judul: "", abstrak: "", kataKunci: [],
+    no: 7,
+    bidang: "DSIS",
+    judul: "Aplikasi Web Deteksi Berita Hoaks Berbahasa Indonesia Menggunakan IndoBERT",
+    abstrak:
+      "Penyebaran berita hoaks di Indonesia membutuhkan alat bantu yang dapat mengenali berita terindikasi hoaks secara cepat. " +
+      "Penelitian ini membangun aplikasi web deteksi berita hoaks berbahasa Indonesia yang menerima teks berita dan menghasilkan label hoaks atau valid beserta skor keyakinan. " +
+      "Banyak penelitian sebelumnya melaporkan akurasi di atas 90%, tetapi umumnya hanya diuji pada data dari sumber yang sama dengan data latih. " +
+      "Model IndoBERT di-fine-tune dan dibandingkan dengan TF-IDF dan SVM menggunakan dataset berita politik yang dilabeli ulang dan dibersihkan dari penanda sumber, lalu diuji pada 600 berita dari dataset lain dan diadaptasi dengan sebagian data tersebut. " +
+      "IndoBERT memperoleh F1-macro 0,977, lebih tinggi daripada SVM (0,944), tetapi pada berita dari sumber berbeda kedua model hanya mencapai ROC-AUC sekitar 0,60, dan adaptasi dengan 480 berita menaikkannya menjadi 0,75–0,76. " +
+      "Aplikasi dibangun dengan Gradio di Hugging Face Spaces dan lulus seluruh skenario uji fungsional. Hasil ini menunjukkan bahwa keragaman data latih lebih menentukan kemampuan model daripada pilihan modelnya.",
+    kataKunci: ["berita hoaks", "IndoBERT", "TF-IDF", "SVM", "klasifikasi teks", "aplikasi web"],
     anggota: [
       { nama: "Grace Martina Caroline Aritonang", nim: "" },
       { nama: "Kora Lalita", nim: "" },
@@ -218,9 +247,14 @@ window.KELOMPOK = [
       { nama: "Mahsa Muhammad Zahran", nim: "" },
       { nama: "Nesshya Azzahra", nim: "" },
       { nama: "Rafiif Alfatih Nusantara", nim: "" },
-      { nama: "Ferry Zaky Anwar Zain", nim: "" }
+      { nama: "Ferry Zaky Anwar Zain", nim: "" },
+      { nama: "Dimas Panji Ananda Marfa'i", nim: "" }
     ],
-    paper: "", luaran: [], dokumentasi: []
+    paper: "papers/kelompok-07.pdf",
+    luaran: [
+      { label: "Aplikasi deteksi hoaks", url: "https://huggingface.co/spaces/bopobop/deteksi-hoaks" }
+    ],
+    dokumentasi: []
   },
   {
     no: 8,
@@ -257,21 +291,31 @@ window.KELOMPOK = [
     dokumentasi: []
   },
   {
-    no: 9, bidang: "DSIS", judul: "", abstrak: "", kataKunci: [],
+    no: 9,
+    bidang: "DSIS",
+    judul: "Implementasi Algoritma Decision Tree untuk Prediksi Kelulusan Tepat Waktu Mahasiswa",
+    abstrak:
+      "Ketepatan waktu kelulusan mahasiswa merupakan salah satu indikator penting dalam mengevaluasi kualitas institusi pendidikan tinggi. " +
+      "Permasalahan yang sering terjadi adalah keterlambatan kelulusan akibat kurang terdeteksinya performa akademik mahasiswa sejak dini. " +
+      "Dengan mengetahui potensi keterlambatan lebih awal, pihak program studi dapat memberikan intervensi atau bimbingan akademik yang tepat. " +
+      "Solusi yang diusulkan adalah sistem klasifikasi menggunakan algoritma Decision Tree berbasis data akademik mahasiswa (IPK, kehadiran, SKS, dan partisipasi organisasi) untuk memprediksi status kelulusan. " +
+      "Hasil pengujian menunjukkan model mampu mengklasifikasikan status kelulusan dengan akurasi 100% pada data uji, sehingga berpotensi digunakan sebagai pendukung keputusan akademik di lingkungan program studi.",
+    kataKunci: ["decision tree", "prediksi kelulusan", "klasifikasi", "data mining", "sistem pendukung keputusan"],
     anggota: [
-      { nama: "Fayza Khalisha Rahma", nim: "" },
       { nama: "Charles Nathan Marcelino Tambunan", nim: "" },
-      { nama: "Kevin Yudha Darinding", nim: "" },
-      { nama: "Farrel Adi Irfani", nim: "" },
-      { nama: "Nazla Zaskya Mouzha Harahap", nim: "" },
-      { nama: "Muhammad Rifkhy Fazriyan", nim: "" },
       { nama: "Fahmi Aufa", nim: "" },
-      { nama: "Muhammad Rakan Arami", nim: "" },
+      { nama: "Farrel Adi Irfani", nim: "" },
+      { nama: "Fayza Khalisha Rahma", nim: "" },
+      { nama: "I Putu Axel Tristan Wirya Atmaja", nim: "" },
       { nama: "Julian Ferdiyanto", nim: "" },
-      { nama: "Rio Nugraha Zain Assyarif", nim: "" },
-      { nama: "I Putu Axel Tristan Wirya Atmaja", nim: "" }
+      { nama: "Muhammad Rifkhy Fazriyan", nim: "" },
+      { nama: "Muhammad Rakan Arami", nim: "" }
     ],
-    paper: "", luaran: [], dokumentasi: []
+    paper: "papers/kelompok-09.pdf",
+    luaran: [
+      { label: "Notebook Kaggle", url: "https://www.kaggle.com/code/aryanugrahakaggle/prediksi-kelulusan-mahasiswa/notebook" }
+    ],
+    dokumentasi: []
   },
   {
     no: 10, bidang: "", judul: "", abstrak: "", kataKunci: [],
@@ -340,21 +384,31 @@ window.KELOMPOK = [
     dokumentasi: []
   },
   {
-    no: 13, bidang: "TEKNOLOGI", judul: "", abstrak: "", kataKunci: [],
+    no: 13,
+    bidang: "TEKNOLOGI",
+    judul: "EduAI Helper: Rancangan Portal Belajar Pemrograman yang Meminta Mahasiswa Mencoba Dulu sebelum Bertanya ke AI",
+    abstrak:
+      "Mahasiswa sudah memakai AI untuk belajar pemrograman, dan sebagian memakainya untuk mendapat jawaban tanpa memahami prosesnya. " +
+      "Kemampuan membaca pesan error dan menelusuri alur program hanya terbentuk jika dikerjakan sendiri, sedangkan jawaban instan melompati latihan itu, dan sumber belajar yang ada belum mengatur cara AI dipakai. " +
+      "Dari kajian literatur dan diskusi kelompok, disusun rancangan EduAI Helper, portal web dengan tiga bagian: cheatsheet materi dengan contoh kode C++, kolom tanya jawab yang mewajibkan pengguna menulis percobaannya lebih dulu, dan galeri tips belajar. " +
+      "AI memberi petunjuk dalam tiga tingkat dan tidak menampilkan kode perbaikan utuh. " +
+      "Hasil utamanya berupa rancangan interaksi yang menuntut mahasiswa mencoba lebih dulu, disertai rencana pengujian pada mahasiswa seangkatan; efektivitasnya belum diuji.",
+    kataKunci: ["kecerdasan buatan", "pembelajaran pemrograman", "scaffolding", "portal edukasi", "mahasiswa informatika"],
     anggota: [
-      { nama: "Afdhal Zikron Abrar", nim: "" },
-      { nama: "Felix Felizio", nim: "" },
       { nama: "Keysha Renata Aniqa", nim: "" },
-      { nama: "Fakhri Muhammad Dzakwan", nim: "" },
-      { nama: "Rafi Ahmad Muzzaki", nim: "" },
-      { nama: "Faiz Ramdlan Anshori", nim: "" },
+      { nama: "Felix Felizio", nim: "" },
+      { nama: "Muhammad Zikri Fachrezi", nim: "" },
       { nama: "Ahsanul Hadi Fauzi", nim: "" },
+      { nama: "Faiz Ramdlan Anshori", nim: "" },
+      { nama: "Fakhri Muhammad Dzakwan", nim: "" },
       { nama: "Mochammad Fikri", nim: "" },
-      { nama: "Adam Ferdyan", nim: "" },
       { nama: "Muhammad Thoriq Rahita", nim: "" },
+      { nama: "Afdhal Zikron Abrar", nim: "" },
       { nama: "Muhammad Fadhlurrahman Safar", nim: "" }
     ],
-    paper: "", luaran: [], dokumentasi: []
+    paper: "papers/kelompok-13.pdf",
+    luaran: [],
+    dokumentasi: []
   },
   {
     no: 14,
@@ -383,7 +437,15 @@ window.KELOMPOK = [
     dokumentasi: []
   },
   {
-    no: 15, bidang: "SEAL", judul: "", abstrak: "", kataKunci: [],
+    no: 15,
+    bidang: "SEAL",
+    judul: "CampusHUB: Platform Terintegrasi untuk Pengelolaan Kegiatan dan Kalender Kampus",
+    abstrak:
+      "CampusHUB adalah platform manajemen kegiatan kampus berbasis web yang menjembatani mahasiswa, organisasi kemahasiswaan (UKM, laboratorium/riset, dan panitia event), serta Super Admin universitas. " +
+      "Setiap jadwal kegiatan yang diajukan organisasi melewati alur persetujuan berjenjang, dan hanya jadwal yang disetujui yang tampil di Kalender Resmi Kampus. " +
+      "Kalender interaktifnya menyediakan tampilan bulan, minggu, hari, dan daftar, dengan filter berdasarkan tipe, organisasi, dan kata kunci serta pembedaan warna untuk event, UKM, dan lab. " +
+      "Fitur lainnya meliputi pendeteksi bentrok jadwal berdasarkan waktu dan lokasi, pendaftaran peserta dengan pengelolaan kuota, hak akses terpisah untuk lima peran pengguna, serta notifikasi di dalam aplikasi untuk setiap pengajuan, persetujuan, permintaan revisi, dan penolakan.",
+    kataKunci: ["kalender kampus", "manajemen kegiatan", "approval workflow", "deteksi bentrok jadwal", "aplikasi web"],
     anggota: [
       { nama: "Muhammad Nur Thoyyib", nim: "" },
       { nama: "Muhammad Kafka Rahfi Gifassya", nim: "" },
@@ -398,7 +460,9 @@ window.KELOMPOK = [
       { nama: "Made Bayu Adnyana", nim: "" },
       { nama: "Pius Edrik Pau", nim: "" }
     ],
-    paper: "", luaran: [], dokumentasi: []
+    paper: "papers/kelompok-15.pdf",
+    luaran: [],
+    dokumentasi: []
   },
   {
     no: 16, bidang: "SEAL", judul: "", abstrak: "", kataKunci: [],
@@ -451,10 +515,19 @@ window.KELOMPOK = [
     dokumentasi: []
   },
   {
-    no: 18, bidang: "SEAL", judul: "", abstrak: "", kataKunci: [],
+    no: 18,
+    bidang: "SEAL",
+    judul: "Aplikasi Optimasi Penyelesaian Transaksi Utang-Piutang Kelompok Berbasis Algoritma Minimum Cash-Flow dan Teori Graf (SettleGraph)",
+    abstrak:
+      "Penyelesaian utang-piutang dalam kegiatan patungan kelompok sering rumit dan memakan waktu karena pembayaran talangan yang berlapis antaranggota. " +
+      "Aplikasi pembagi tagihan biasa hanya membagi nominal per struk tanpa menyederhanakan relasi utang secara menyeluruh, sehingga pengguna menanggung biaya transfer berulang dan risiko salah hitung. " +
+      "Penelitian ini membangun SettleGraph, aplikasi web yang memodelkan utang-piutang kelompok sebagai graf berarah berbobot, menghitung saldo bersih setiap anggota, lalu menerapkan algoritma Minimum Cash-Flow berbasis greedy untuk memasangkan piutang dan utang terbesar secara bertahap. " +
+      "Keluarannya berupa daftar instruksi transfer paling minimal beserta visualisasi graf sebelum dan sesudah optimasi. " +
+      "Pengujian pada 10 skenario simulasi menunjukkan jumlah transfer berkurang lebih dari 50% dibandingkan pencatatan langsung tanpa optimasi, dengan seluruh saldo akhir seimbang (net-zero).",
+    kataKunci: ["algoritma greedy", "minimum cash-flow", "optimasi transaksi", "pembagian tagihan", "teori graf"],
     anggota: [
       { nama: "Lukman Hakim", nim: "" },
-      { nama: "Muhammad Naufal Faiq Aljizrawi", nim: "" },
+      { nama: "Muhammad Naufal Faiq Aljjizrawi", nim: "" },
       { nama: "Haura Agitha Humaira", nim: "" },
       { nama: "Rayya Izzatul Mila", nim: "" },
       { nama: "Aliya Ammaranisa Kurniawan", nim: "" },
@@ -465,10 +538,21 @@ window.KELOMPOK = [
       { nama: "Mariza Syalzabilla", nim: "" },
       { nama: "Jati Bintang Samudera Kharisma Putra", nim: "" }
     ],
-    paper: "", luaran: [], dokumentasi: []
+    paper: "papers/kelompok-18.pdf",
+    luaran: [],
+    dokumentasi: []
   },
   {
-    no: 19, bidang: "ORMAWA", judul: "", abstrak: "", kataKunci: [],
+    no: 19,
+    bidang: "DSIS",
+    judul: "SkillProof: An Evidence Based Student Skill Mapping and Industry Gap Analysis System",
+    abstrak:
+      "Industri teknologi terus berubah, dan mahasiswa Informatika dituntut memahami seberapa jauh kemampuan mereka sudah sesuai dengan keterampilan yang dicari dunia kerja. " +
+      "Pemetaan keterampilan selama ini sering bertumpu pada penilaian mandiri dan belum mengaitkan bukti penerapan kemampuan lewat proyek dengan kebutuhan kompetensi pada lowongan pekerjaan. " +
+      "Paper ini mengusulkan SkillProof, sistem pemetaan keterampilan berbasis bukti yang memadukan penilaian mandiri mahasiswa, dokumentasi proyek, dan informasi kebutuhan industri. " +
+      "Natural Language Processing dirancang untuk mengekstraksi keterampilan dari deskripsi pekerjaan dan dokumentasi proyek, sedangkan Machine Learning (K-Means Clustering) direncanakan untuk menganalisis pola kompetensi mahasiswa. " +
+      "Hasil yang diharapkan berupa profil keterampilan, identifikasi kesenjangan kompetensi, dan rekomendasi pengembangan kemampuan; SkillProof diposisikan sebagai alat bantu perencanaan pengembangan kompetensi, bukan penentu layak-tidaknya seseorang diterima bekerja.",
+    kataKunci: ["skill mapping", "bukti proyek", "Natural Language Processing", "Machine Learning", "skill gap analysis"],
     anggota: [
       { nama: "Muhammad Hafiz Zuhdi", nim: "" },
       { nama: "Angga Yudhistira", nim: "" },
@@ -482,7 +566,9 @@ window.KELOMPOK = [
       { nama: "Raffy Muhammad Athallah", nim: "" },
       { nama: "Iman Abdi Ilahi", nim: "" }
     ],
-    paper: "", luaran: [], dokumentasi: []
+    paper: "papers/kelompok-19.pdf",
+    luaran: [],
+    dokumentasi: []
   },
   {
     no: 20, bidang: "SEAL", judul: "", abstrak: "", kataKunci: [],
@@ -497,7 +583,8 @@ window.KELOMPOK = [
       { nama: "Farrel Raza Sigak Amrullah", nim: "" },
       { nama: "Sayyid Rahman Al-Azis", nim: "" },
       { nama: "Mochamad Dzikri Abbas", nim: "" },
-      { nama: "Zhafran Atthaurrahman Alezaryan", nim: "" }
+      { nama: "Zhafran Atthaurrahman Alezaryan", nim: "" },
+      { nama: "Muhammad Rabbani Al-Kautsar", nim: "" }
     ],
     paper: "", luaran: [], dokumentasi: []
   },
@@ -562,12 +649,21 @@ window.KELOMPOK = [
     dokumentasi: []
   },
   {
-    no: 23, bidang: "ORMAWA", judul: "", abstrak: "", kataKunci: [],
+    no: 23,
+    bidang: "ORMAWA",
+    judul: "Perancangan Unit Kegiatan Mahasiswa BHUMI \"Bina Harmoni untuk Masyarakat dan Lingkungan\" sebagai Wadah Kolaborasi dalam Mewujudkan Keberlanjutan Lingkungan dan Pemberdayaan Sosial di Sekitar Telkom University",
+    abstrak:
+      "Permasalahan lingkungan dan sosial di kawasan Telkom University membutuhkan keterlibatan mahasiswa dan masyarakat. " +
+      "Paper ini mengusulkan pembentukan UKM BHUMI (Bina Harmoni untuk Masyarakat dan Lingkungan) sebagai wadah kolaborasi dalam menjaga lingkungan dan memberdayakan masyarakat. " +
+      "Organisasi ini memiliki empat divisi dengan program yang berfokus pada aksi lingkungan, pendampingan masyarakat, edukasi, serta pengembangan inovasi. " +
+      "Implementasi program diwujudkan melalui Festival BHUMI yang menggabungkan aksi lapangan, lokakarya, dan pameran inovasi. " +
+      "Keberhasilan kegiatan dievaluasi berdasarkan partisipasi, pelaksanaan program, serta dampak sosial dan lingkungan.",
+    kataKunci: ["BHUMI", "UKM", "keberlanjutan lingkungan", "pemberdayaan masyarakat", "kolaborasi mahasiswa"],
     anggota: [
+      { nama: "Pradiptha Arya Eka Prasetyo", nim: "" },
       { nama: "Fakhri Ihsan", nim: "" },
       { nama: "Naradipa Yogaswara", nim: "" },
       { nama: "Aura Agny Arkadiva Rawijanto Putri", nim: "" },
-      { nama: "Pradiptha Arya Eka Prasetyo", nim: "" },
       { nama: "Andi Istilfa Hanifa", nim: "" },
       { nama: "I Putu Saka Putra Ardana", nim: "" },
       { nama: "Nadya Auradiva", nim: "" },
@@ -576,7 +672,9 @@ window.KELOMPOK = [
       { nama: "Muhammed Syauqi Rizqullah", nim: "" },
       { nama: "Goldien Adhiyaksa Hasim Putra", nim: "" }
     ],
-    paper: "", luaran: [], dokumentasi: []
+    paper: "papers/kelompok-23.pdf",
+    luaran: [],
+    dokumentasi: []
   },
   {
     no: 24, bidang: "", judul: "", abstrak: "", kataKunci: [],
@@ -591,106 +689,158 @@ window.KELOMPOK = [
       { nama: "Gaza Raushan Fikri", nim: "" },
       { nama: "Rafi Putra Effendi", nim: "" },
       { nama: "Adra Athallah Octaviadi", nim: "" },
-      { nama: "Aria Chrisna Bayu", nim: "" }
+      { nama: "Aria Chrisna Bayu", nim: "" },
+      { nama: "Renanda Dava Putra Rasyid", nim: "" }
     ],
     paper: "", luaran: [], dokumentasi: []
   },
   {
-    no: 25, bidang: "ORMAWA", judul: "", abstrak: "", kataKunci: [],
+    no: 25,
+    bidang: "ORMAWA",
+    judul: "Perancangan Organisasi Kemahasiswaan Bidang Audio Engineering dan Music Technology (UKM TechSound Lab)",
+    abstrak:
+      "Perkembangan teknologi komputasi membuka peluang integrasi antara ilmu komputer dan seni audio kreatif. " +
+      "Namun, mahasiswa Informatika kerap kesulitan menerapkan konsep teoretis seperti pemrosesan sinyal digital dan aljabar linier ke dalam karya nyata, karena organisasi kemahasiswaan terpolarisasi antara bidang teknologi konvensional dan seni musik tradisional. " +
+      "Perancangan ini bertujuan membentuk UKM TechSound Lab sebagai wadah inkubasi kreativitas berbasis art-engineering integration di Telkom University, dengan metode studi literatur dan analisis perbandingan konseptual. " +
+      "Hasilnya berupa kerangka organisasi lintas program studi dengan pengurus inti dan empat divisi teknisi: Logistik, Akustik & Peralatan; Riset & Pengembangan Software; Studio & Produksi; serta Event & Publikasi. " +
+      "Kegiatan dijalankan melalui lima program unggulan berjenjang, yaitu pelatihan akustik, pengembangan plugin audio, automasi mixing, live coding musik, dan pameran inovasi, dengan alur proyek lima tahap yang terukur.",
+    kataKunci: ["teknologi musik", "rekayasa audio", "pemrosesan sinyal digital", "komputasi kreatif", "organisasi mahasiswa"],
     anggota: [
       { nama: "Anjar Azzam Fadhilah", nim: "" },
-      { nama: "Radhitya Azka Putra Arosa", nim: "" },
+      { nama: "Adnafika Hanina Ridwan", nim: "" },
+      { nama: "Adrian Hermawan", nim: "" },
+      { nama: "Andi Alraly Pasha Ramadhan", nim: "" },
+      { nama: "Andika Restu Fathurochman", nim: "" },
+      { nama: "Dimas Angga Prasetya", nim: "" },
+      { nama: "Devano Muhammad Danu Nebukaneza", nim: "" },
+      { nama: "Gradeckal Raihan Labib", nim: "" },
+      { nama: "Kinasih Sekar Pertiwi", nim: "" },
       { nama: "Muhammad Fahlevi", nim: "" },
       { nama: "Nazifa Putri Ferika", nim: "" },
-      { nama: "Gradeckal Raihan Labib", nim: "" },
-      { nama: "Andi Alraly Pasha Rahadhan", nim: "" },
-      { nama: "Adrian Hermawan", nim: "" },
-      { nama: "Adnafika Hanina Ridwan", nim: "" },
-      { nama: "Kinasih Sekar Pertiwi", nim: "" },
-      { nama: "Andika Restu Fathurochman", nim: "" },
-      { nama: "Devano Muhammad Danu Nebukaneza", nim: "" }
+      { nama: "Radhitya Azka Putra Arosa", nim: "" }
     ],
-    paper: "", luaran: [], dokumentasi: []
+    paper: "papers/kelompok-25.pdf",
+    luaran: [
+      { label: "Dokumentasi kelompok", url: "https://drive.google.com/drive/folders/1A0HDmfcy0bT1a1b_LerN8L_dQlU8TZ4h" }
+    ],
+    dokumentasi: []
   },
   {
-    no: 26, bidang: "", judul: "", abstrak: "", kataKunci: [],
+    no: 26,
+    bidang: "",
+    judul: "Analisis Perbandingan Kecepatan Algoritma Bubble Sort, Selection Sort, dan Insertion Sort pada Berbagai Ukuran dan Kondisi Data",
+    abstrak:
+      "Bubble Sort, Selection Sort, dan Insertion Sort memiliki kompleksitas waktu rata-rata yang sama, yaitu O(n²), sehingga sering dianggap setara. " +
+      "Penelitian ini mengukur dan membandingkan waktu eksekusi ketiga algoritma secara empiris dengan implementasi Python 3.12 pada data bilangan bulat acak berukuran 100 sampai 5.000 elemen, serta pada data terurut, acak, dan terbalik. " +
+      "Hasilnya menunjukkan waktu eksekusi pada data acak tumbuh kuadratik sesuai O(n²), dengan Bubble Sort paling lambat: sekitar 2,5 kali lebih lama daripada Selection Sort dan 2,3 kali lebih lama daripada Insertion Sort pada n = 5.000. " +
+      "Pada data terurut, Bubble Sort dengan penanda pertukaran dan Insertion Sort jauh lebih cepat karena berperilaku O(n), sedangkan Selection Sort tidak terpengaruh. " +
+      "Pada data terbalik, Selection Sort menjadi yang tercepat karena jumlah pertukarannya paling sedikit, dan jumlah perbandingan yang terukur konsisten dengan perkiraan teoretis.",
+    kataKunci: ["bubble sort", "selection sort", "insertion sort", "kompleksitas waktu", "waktu eksekusi", "analisis empiris"],
     anggota: [
-      { nama: "Muhamad Hammam Misbah", nim: "" },
-      { nama: "Muhammad Fauzi Ramadhan", nim: "" },
-      { nama: "Muhammad Falih Rizki Prasetyo", nim: "" },
-      { nama: "Made Ayesa Bagus Dwipayana", nim: "" },
-      { nama: "Nadhif Miftah Hibatullah", nim: "" },
-      { nama: "Varrel Christian Wiranata", nim: "" },
-      { nama: "Aulia Mustika Makmur", nim: "" },
-      { nama: "Revan Putra Andrian", nim: "" },
       { nama: "Ahmad Dhani Nur Ridwan", nim: "" },
       { nama: "Aliyyah Huriyah Ilahi", nim: "" },
-      { nama: "Kevin Aditya Pratama", nim: "" }
+      { nama: "Aulia Mustika Makmur", nim: "" },
+      { nama: "Kevin Aditya Pratama", nim: "" },
+      { nama: "Made Ayesa Bagus Dwipayana", nim: "" },
+      { nama: "Muhamad Hammam Misbah", nim: "" },
+      { nama: "Muhammad Falih Rizki Prasetyo", nim: "" },
+      { nama: "Muhammad Fauzi Ramadhan", nim: "" },
+      { nama: "Nadhif Miftah Hibatullah", nim: "" },
+      { nama: "Revan Putra Andrian", nim: "" },
+      { nama: "Varrel Christian Wiranata", nim: "" }
     ],
-    paper: "", luaran: [], dokumentasi: []
+    paper: "papers/kelompok-26.pdf",
+    luaran: [
+      { label: "Situs hasil pengujian", url: "https://tubesfortran.vercel.app/TUBES.html#hasil-pengujian" }
+    ],
+    dokumentasi: []
   },
   {
-    no: 27, bidang: "ORMAWA", judul: "", abstrak: "", kataKunci: [],
+    no: 27,
+    bidang: "ORMAWA",
+    judul: "Eksistensi Mahasiswa di Era Digital: Antara Ketergantungan dan Alienasi Teknologi",
+    abstrak:
+      "Kemajuan teknologi digital memudahkan mahasiswa mengakses informasi dan berkomunikasi, tetapi pemakaian yang tak terkendali memicu dua persoalan yang saling berkaitan: ketergantungan pada gawai yang menurunkan fokus dan efisiensi studi, serta keterasingan sosial yang mengurangi interaksi langsung antarmahasiswa. " +
+      "Riset terdahulu umumnya mengulas kedua masalah ini secara terpisah. " +
+      "Studi ini menyusun kerangka analisis konseptual berbasis tinjauan pustaka yang menghubungkan keduanya melalui tiga lapis: adiksi terhadap perangkat, alienasi sosial akibat dominasi komunikasi virtual, dan perilaku phubbing sebagai titik temunya. " +
+      "Temuan tiga penelitian sebelumnya dikelompokkan ke dalam matriks tematik dan dibandingkan untuk mencari kemiripan serta celah. " +
+      "Hasilnya menunjukkan ketiga studi mengungkap dampak negatif penggunaan teknologi yang tidak terkendali, tetapi keterkaitan ketergantungan dan alienasi masih terbatas pada perilaku phubbing dan bersifat teoretis, sehingga pengujian empiris diperlukan pada kajian mendatang.",
+    kataKunci: ["eksistensi mahasiswa", "era digital", "ketergantungan teknologi", "alienasi sosial", "phubbing", "kajian pustaka"],
     anggota: [
-      { nama: "Rillo Raihan Dwi Satria", nim: "" },
-      { nama: "Mario Satya Febrian", nim: "" },
-      { nama: "Rajwa Naila Arkan", nim: "" },
-      { nama: "M. Pasya Alfaridzi", nim: "" },
       { nama: "Nadia Evelyna Cahyarani", nim: "" },
+      { nama: "Rillo Raihan Dwi Satria", nim: "" },
+      { nama: "Khalif Raufa Ma'arif", nim: "" },
+      { nama: "Dzaki Hisyam Morenho", nim: "" },
+      { nama: "Nathaniel Darius Ahmad Raja Gukguk", nim: "" },
       { nama: "Syifa Khairunnisa", nim: "" },
       { nama: "Maulana Ade Fathurrozaqi", nim: "" },
-      { nama: "Dimas Angga Prasetya", nim: "" },
-      { nama: "Dzaki Hisyam Morenho", nim: "" },
-      { nama: "Khalif Raufa Ma'arif", nim: "" },
-      { nama: "Nathaniel Darius Ahmad Raja Gukguk", nim: "" }
+      { nama: "Rajwa Naila Arkan", nim: "" },
+      { nama: "Mario Satya Febrian", nim: "" },
+      { nama: "M. Pasya Alfaridzi", nim: "" }
     ],
-    paper: "", luaran: [], dokumentasi: []
+    paper: "papers/kelompok-27.pdf",
+    luaran: [],
+    dokumentasi: []
   },
   {
     no: 28,
     bidang: "DSIS",
     judul: "Visualisasi Tren Penyebaran Berita Hoaks di Indonesia Berbasis Dashboard Interaktif",
     abstrak:
-      "Kelompok ini memvisualisasikan tren penyebaran berita hoaks di Indonesia menggunakan data TurnBackHoax. " +
-      "Data dibersihkan dan diolah, lalu disajikan dalam dashboard interaktif berbasis Streamlit. " +
-      "(Ganti paragraf ini dengan abstrak dari mini paper.)",
+      "Tingginya penyebaran hoaks di Indonesia menuntut pemahaman pola dinamika informasi secara visual, sementara studi terdahulu lebih berfokus pada klasifikasi otomatis dibandingkan eksplorasi tren waktu dan karakteristik narasi. " +
+      "Penelitian ini menganalisis tren bulanan, distribusi jenis hoaks, perbandingan kata dominan, serta platform digital yang paling sering dikaitkan dengan hoaks, lalu menyajikannya dalam dashboard web interaktif. " +
+      "Metodenya meliputi pengolahan 23.586 data bersih dari dataset Deteksi Berita Hoaks Indo (berita valid Kompas.com, Antaranews.com, Detik.com, dan artikel hoaks TurnBackHoax.id), pengambilan tanggal publikasi melalui web scraping pada artikel hoaks periode Februari 2024 hingga April 2026, serta pengembangan dashboard berbasis Streamlit. " +
+      "Hasilnya menunjukkan rata-rata 417 artikel hoaks per bulan dengan puncak pada September 2024 sebanyak 617 artikel, serta dominasi kategori Salah/Hoaks sebesar 64,5%. " +
+      "Artikel hoaks didominasi istilah penyebaran digital seperti \"akun\", \"video\", dan \"Facebook\", sedangkan berita valid berfokus pada isu sosial dan pemerintahan, dengan Facebook menjadi platform paling sering disebut (28,7%).",
     kataKunci: ["hoaks", "visualisasi data", "dashboard", "Streamlit", "TurnBackHoax"],
     anggota: [
-      { nama: "Salsabila Ramadhina Danisti", nim: "" },
-      { nama: "Ezzar Kaysan Gumilar", nim: "" },
+      { nama: "Rayyan Nakhlah Prayata", nim: "" },
       { nama: "Tiara Shaila Callysta", nim: "" },
+      { nama: "Nadya Aliyya Azahra", nim: "" },
+      { nama: "Nabila Hanif Nurfitriya", nim: "" },
       { nama: "Fatih Akram Wicaksono", nim: "" },
       { nama: "Wildan Panji Maulana", nim: "" },
+      { nama: "Muhammad Fadhil", nim: "" },
       { nama: "Tegar Sauma Ramdan Kurnia", nim: "" },
-      { nama: "Nabila Hanif Nurfitriya", nim: "" },
-      { nama: "Cattleya Rahmi Mauludin", nim: "" },
-      { nama: "Nadya Aliyya Azahra", nim: "" },
-      { nama: "Rayyan Nakhlah Prayata", nim: "" },
-      { nama: "Naufal Rofif Jauhari", nim: "" }
+      { nama: "Naufal Rofif Jauhari", nim: "" },
+      { nama: "Salsabila Ramadhina Danisti", nim: "" },
+      { nama: "Ezzar Kaysan Gumilar", nim: "" },
+      { nama: "Cattleya Rahmi Mauludin", nim: "" }
     ],
-    paper: "", // contoh: "papers/kelompok-28.pdf"
+    paper: "papers/kelompok-28.pdf",
     luaran: [
-      // { label: "Dashboard Streamlit", url: "https://....streamlit.app" }
+      { label: "Dashboard Streamlit", url: "https://dashboard-tren-penyebaran-berita-hoaks-di-indonesia.streamlit.app/" },
+      { label: "Website proyek", url: "https://kelompok28-fortran.vercel.app/" },
+      { label: "Notebook & dataset", url: "https://drive.google.com/drive/folders/11FeB4sWJquzsUperry8i6ggoazB-uZqX?usp=drive_link" }
     ],
-    dokumentasi: [
-      // { src: "dokumentasi/kelompok-28/1.jpg", caption: "Diskusi pembagian jobdesk" }
-    ]
+    dokumentasi: []
   },
   {
-    no: 29, bidang: "TEKNOLOGI", judul: "", abstrak: "", kataKunci: [],
+    no: 29,
+    bidang: "TEKNOLOGI",
+    judul: "Industri 4.0 dan Masa Depan Manufaktur Indonesia: Peran Teknologi, Tantangan, dan Strategi Penerapan",
+    abstrak:
+      "Kajian ini membahas penerapan teknologi Industri 4.0 pada sektor manufaktur di Indonesia, dengan masukan berupa literatur dan data sekunder, untuk menghasilkan gambaran peran teknologi, tantangan, dan strategi yang dapat dipakai. " +
+      "Industri pengolahan menyumbang 19,07 persen terhadap PDB nasional pada 2025, tetapi penerapan teknologi digital di dalamnya belum merata: industri besar sudah bergerak lebih jauh, sedangkan industri kecil dan menengah masih terkendala kemampuan tenaga kerja, biaya investasi, dan keamanan siber. " +
+      "Kajian dilakukan dengan studi literatur kualitatif deskriptif terhadap jurnal, data BPS, peta jalan Making Indonesia 4.0, studi kasus PT INKA, dan survei kesiapan pada 1.661 perusahaan industri, lalu dikelompokkan menjadi peran teknologi, tantangan, dan strategi. " +
+      "Hasilnya menunjukkan bahwa hambatan penerapan lebih banyak berasal dari kesiapan organisasi daripada keterbatasan teknologi. " +
+      "Penerapan bertahap sesuai skala industri, pelatihan tenaga kerja, dan keamanan digital sejak awal menjadi strategi yang disarankan.",
+    kataKunci: ["industri 4.0", "manufaktur", "IoT", "AI", "cloud computing", "Making Indonesia 4.0"],
     anggota: [
-      { nama: "Muhammad Raehan Almadani", nim: "" },
-      { nama: "Muhammad Fanny Adinata", nim: "" },
-      { nama: "Amelia Junita Sitohang", nim: "" },
-      { nama: "Muhammad Teguh Triyanugraha", nim: "" },
-      { nama: "Raditya Riandika Irfani", nim: "" },
-      { nama: "Sherly Ardyna Dewy", nim: "" },
-      { nama: "Lus Nisrina Nazina Idrus", nim: "" },
-      { nama: "Najwa Calista Aqilah", nim: "" },
-      { nama: "Ghulam Rasyiq Badra Ali", nim: "" },
       { nama: "Hairul Hakim Kusaeri", nim: "" },
-      { nama: "Alfa Hanif Savero", nim: "" }
+      { nama: "Muhammad Fanny Adinata", nim: "" },
+      { nama: "Raditya Riandika Irfani", nim: "" },
+      { nama: "Najwa Calista Aqilah", nim: "" },
+      { nama: "Maulana Akhtar Firmansyah", nim: "" },
+      { nama: "Lus Nisrina Nazina Idrus", nim: "" },
+      { nama: "Alfa Hanif Savero", nim: "" },
+      { nama: "Ghulam Rasyiq Badra Ali", nim: "" },
+      { nama: "Sherly Ardyna Dewy", nim: "" },
+      { nama: "Muhammad Raehan Almadani", nim: "" },
+      { nama: "Amelia Junita Sitohang", nim: "" }
     ],
-    paper: "", luaran: [], dokumentasi: []
+    paper: "papers/kelompok-29.pdf",
+    luaran: [],
+    dokumentasi: []
   }
 ];
