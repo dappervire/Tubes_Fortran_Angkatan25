@@ -395,7 +395,8 @@ window.KELOMPOK = [
       { nama: "Gading Huga Pranata", nim: "" },
       { nama: "Muhammad Reffy Lesmana", nim: "" },
       { nama: "Attala Deval Alryan", nim: "" },
-      { nama: "Made Bayu Adnyana", nim: "" }
+      { nama: "Made Bayu Adnyana", nim: "" },
+      { nama: "Pius Edrik Pau", nim: "" }
     ],
     paper: "", luaran: [], dokumentasi: []
   },
