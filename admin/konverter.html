@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
+  <title>Konverter Data Kelompok</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600&family=IBM+Plex+Mono:wght@400;500&family=Spectral:wght@400;500&display=swap">
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <style>
+    body { font-size: 16px; }
+    .page { padding: 40px 0 80px; display: grid; gap: 28px; }
+    .page h1 { font-family: var(--f-display); font-size: 30px; margin: 0; }
+    .page p { margin: 0; color: var(--muted); max-width: 70ch; }
+    .card { background: var(--iron-2); border: 1px solid var(--line); border-radius: var(--radius); padding: 20px; display: grid; gap: 14px; }
+    .card h2 { margin: 0; font-family: var(--f-mono); font-size: 13px; letter-spacing: .12em; text-transform: uppercase; color: var(--gold); font-weight: 500; }
+    textarea { width: 100%; min-height: 200px; padding: 14px; background: var(--iron); color: var(--parch); border: 1px solid var(--line); border-radius: var(--radius); font-family: var(--f-mono); font-size: 13px; line-height: 1.5; resize: vertical; }
+    textarea:focus { outline: none; border-color: var(--gold); }
+    .row { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; }
+    .file { font-family: var(--f-mono); font-size: 13px; color: var(--muted); }
+    .status { font-family: var(--f-mono); font-size: 13px; color: var(--muted); }
+    .status.ok { color: #7cc4a4; }
+    .status.err { color: #e58a7e; }
+    .tbl-wrap { overflow-x: auto; border: 1px solid var(--line); border-radius: var(--radius); }
+    table { border-collapse: collapse; width: 100%; font-size: 14px; }
+    th, td { padding: 8px 12px; border-bottom: 1px solid var(--line); text-align: left; vertical-align: top; }
+    th { font-family: var(--f-mono); font-size: 12px; color: var(--muted); font-weight: 500; background: var(--iron); white-space: nowrap; }
+    td.num { font-family: var(--f-mono); font-variant-numeric: tabular-nums; }
+    .warn { color: #e0b960; font-family: var(--f-mono); font-size: 12px; }
+    .good { color: #7cc4a4; font-family: var(--f-mono); font-size: 12px; }
+    code { font-family: var(--f-mono); font-size: 13px; background: var(--iron); padding: 1px 6px; border-radius: 3px; color: var(--gold-hi); }
+    ol.steps { margin: 0; padding-left: 20px; color: #cfc7b5; display: grid; gap: 6px; }
+  </style>
+</head>
+<body>
+  <main class="wrap page">
+    <div>
+      <p class="eyebrow">Alat panitia · tidak ditautkan dari halaman utama</p>
+      <h1>Konverter CSV → data kelompok</h1>
+    </div>
+    <p>Ubah hasil Google Form / Google Sheet menjadi file <code>data/kelompok.js</code>. Semua proses berjalan di browser ini; tidak ada data yang dikirim ke mana pun.</p>
+
+    <section class="card">
+      <h2>1 · Masukkan CSV</h2>
+      <ol class="steps">
+        <li>Di Google Sheet hasil form: <b>File → Download → Comma-separated values (.csv)</b>.</li>
+        <li>Pilih file CSV-nya di bawah, atau tempel isinya ke kotak teks.</li>
+        <li>Nama kolom dikenali otomatis selama mengandung kata: <code>kelompok</code>, <code>bidang</code>/<code>topik</code>, <code>judul</code>, <code>abstrak</code>, <code>kunci</code>, <code>anggota</code>, <code>paper</code>/<code>pdf</code>, <code>luaran</code>/<code>tautan</code>, <code>dokumentasi</code>/<code>foto</code>.</li>
+      </ol>
+      <div class="row">
+        <label class="file" for="file">File CSV: <input type="file" id="file" accept=".csv,text/csv,.tsv,text/plain"></label>
+      </div>
+      <label for="csv" class="sr-only">Isi CSV</label>
+      <textarea id="csv" spellcheck="false" placeholder="no,bidang,judul,abstrak,kata_kunci,anggota,paper,luaran,dokumentasi"></textarea>
+      <div class="row">
+        <label class="toggle" for="merge"><input type="checkbox" id="merge" checked> <span>Gabungkan dengan data yang sudah ada (kelompok yang tidak ada di CSV tetap dipertahankan)</span></label>
+      </div>
+      <div class="row">
+        <button type="button" class="btn btn-gold btn-sm" id="convert">Proses CSV</button>
+        <span class="status" id="status" aria-live="polite"></span>
+      </div>
+    </section>
+
+    <section class="card" id="preview-card" hidden>
+      <h2>2 · Periksa hasil</h2>
+      <div class="tbl-wrap"><table id="preview"></table></div>
+    </section>
+
+    <section class="card" id="out-card" hidden>
+      <h2>3 · Simpan sebagai data/kelompok.js</h2>
+      <p>Unduh file ini, lalu timpa <code>data/kelompok.js</code> di folder website. Kalau tombol unduh tidak bekerja, salin teksnya dan tempel ke file tersebut.</p>
+      <div class="row">
+        <button type="button" class="btn btn-gold btn-sm" id="download">Unduh kelompok.js</button>
+        <button type="button" class="btn btn-ghost btn-sm" id="copy">Salin teks</button>
+        <span class="status" id="copy-status" aria-live="polite"></span>
+      </div>
+      <label for="out" class="sr-only">Hasil</label>
+      <textarea id="out" spellcheck="false" readonly></textarea>
+    </section>
+  </main>
+
+  <script src="../data/kelompok.js"></script>
+  <script>
+  (function () {
+    "use strict";
+    var SITE = window.SITE || {}, BIDANG = window.BIDANG || {}, OLD = window.KELOMPOK || [];
+    function $(s) { return document.querySelector(s); }
+    function esc(s) { return String(s == null ? "" : s).replace(/[&<>"]/g, function (c) { return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]; }); }
+
+    /* CSV parser: tanda kutip, baris baru di dalam sel, pemisah , ; atau tab */
+    function parseCSV(text) {
+      text = text.replace(/^﻿/, "");
+      var first = text.split(/\r?\n/)[0] || "";
+      var delim = [",", ";", "\t"].sort(function (a, b) { return first.split(b).length - first.split(a).length; })[0];
+      var rows = [], row = [], cell = "", q = false;
+      for (var i = 0; i < text.length; i++) {
+        var c = text[i];
+        if (q) {
+          if (c === '"') { if (text[i + 1] === '"') { cell += '"'; i++; } else q = false; }
+          else cell += c;
+        } else if (c === '"') q = true;
+        else if (c === delim) { row.push(cell); cell = ""; }
+        else if (c === "\n" || c === "\r") {
+          if (c === "\r" && text[i + 1] === "\n") i++;
+          row.push(cell); rows.push(row); row = []; cell = "";
+        } else cell += c;
+      }
+      if (cell !== "" || row.length) { row.push(cell); rows.push(row); }
+      return rows.filter(function (r) { return r.some(function (x) { return x.trim() !== ""; }); });
+    }
+
+    var FIELDS = [
+      ["no", /(^no$|nomor|kelompok)/],
+      ["bidang", /(bidang|topik)/],
+      ["judul", /judul/],
+      ["abstrak", /(abstrak|ringkasan|abstract)/],
+      ["kataKunci", /(kunci|keyword)/],
+      ["anggota", /anggota/],
+      ["paper", /(paper|pdf|naskah)/],
+      ["luaran", /(luaran|tautan|link|url)/],
+      ["dokumentasi", /(dokumentasi|foto|gambar)/]
+    ];
+    function mapHeader(h) {
+      var map = {};
+      h.forEach(function (name, i) {
+        var n = name.toLowerCase().trim();
+        if (/timestamp|cap waktu|email/.test(n)) return;
+        for (var f = 0; f < FIELDS.length; f++) {
+          var key = FIELDS[f][0];
+          if (map[key] == null && FIELDS[f][1].test(n)) { map[key] = i; break; }
+        }
+      });
+      return map;
+    }
+    function splitList(s, allowComma) {
+      var re = allowComma ? /\r?\n|;|,(?=\s*https?:)|,(?![^()]*\))/ : /\r?\n|;/;
+      return String(s || "").split(re).map(function (x) { return x.trim(); }).filter(Boolean);
+    }
+    function normBidang(b) {
+      var k = String(b || "").trim().toUpperCase();
+      if (!k) return "";
+      if (BIDANG[k]) return k;
+      if (k.indexOf("TEKNO") !== -1) return "TEKNOLOGI";
+      if (k.indexOf("ORMAWA") !== -1 || k.indexOf("UKM") !== -1) return "ORMAWA";
+      for (var key in BIDANG) if (String(BIDANG[key].nama).toUpperCase() === k) return key;
+      return "?" + b;
+    }
+    function parseMember(s) {
+      var nim = (s.match(/\d{8,15}/) || [""])[0];
+      var nama = s.replace(nim, "").replace(/[()\[\]\-–—|,:]+/g, " ").replace(/\s+/g, " ").trim();
+      return { nama: nama, nim: nim };
+    }
+    function parseLink(s) {
+      var parts = s.split("|").map(function (x) { return x.trim(); });
+      if (parts.length > 1) return { label: parts[0], url: parts.slice(1).join("|") };
+      return { label: "Tautan proyek", url: parts[0] };
+    }
+    function parseDoc(s) {
+      var parts = s.split("|").map(function (x) { return x.trim(); });
+      return parts[1] ? { src: parts[0], caption: parts[1] } : { src: parts[0] };
+    }
+
+    function rowToGroup(r, m) {
+      function get(k) { return m[k] == null ? "" : String(r[m[k]] || "").trim(); }
+      var no = parseInt((get("no").match(/\d+/) || [""])[0], 10);
+      return {
+        no: no,
+        bidang: normBidang(get("bidang")),
+        judul: get("judul"),
+        abstrak: get("abstrak").replace(/\s*\r?\n\s*/g, " "),
+        kataKunci: get("kataKunci").split(/[,;\n]/).map(function (x) { return x.trim(); }).filter(Boolean),
+        anggota: splitList(get("anggota")).map(parseMember).filter(function (a) { return a.nama; }),
+        paper: get("paper").split(/[\s,]+/).filter(Boolean)[0] || "",
+        luaran: splitList(get("luaran"), true).map(parseLink).filter(function (l) { return /^https?:\/\//.test(l.url); }),
+        dokumentasi: splitList(get("dokumentasi"), true).map(parseDoc)
+      };
+    }
+
+    var result = null;
+    function build(groups) {
+      var lines = [];
+      lines.push("/* Dibuat oleh admin/konverter.html pada " + new Date().toLocaleString("id-ID") + " */");
+      lines.push("");
+      lines.push("window.SITE = " + JSON.stringify(SITE, null, 2) + ";");
+      lines.push("");
+      lines.push("window.BIDANG = " + JSON.stringify(BIDANG, null, 2) + ";");
+      lines.push("");
+      lines.push("window.KELOMPOK = " + JSON.stringify(groups, null, 2) + ";");
+      return lines.join("\n") + "\n";
+    }
+
+    function run() {
+      var status = $("#status");
+      status.className = "status";
+      var rows = parseCSV($("#csv").value);
+      if (rows.length < 2) { status.className = "status err"; status.textContent = "CSV kosong atau hanya berisi judul kolom."; return; }
+      var m = mapHeader(rows[0]);
+      if (m.no == null) { status.className = "status err"; status.textContent = "Kolom nomor kelompok tidak ditemukan. Beri judul kolom yang mengandung kata \"kelompok\" atau \"no\"."; return; }
+
+      var parsed = {};
+      var skipped = 0;
+      rows.slice(1).forEach(function (r) {
+        var g = rowToGroup(r, m);
+        if (!g.no) { skipped++; return; }
+        parsed[g.no] = g; // kiriman terakhir yang dipakai
+      });
+
+      var merged = {};
+      if ($("#merge").checked) OLD.forEach(function (g) { if (g && g.no) merged[g.no] = g; });
+      Object.keys(parsed).forEach(function (no) {
+        var g = parsed[no], old = merged[no] || {};
+        if (!g.bidang && old.bidang) g.bidang = old.bidang;
+        merged[no] = g;
+      });
+      var groups = Object.keys(merged).map(Number).sort(function (a, b) { return a - b; }).map(function (n) { return merged[n]; });
+
+      var html = "<thead><tr><th>No</th><th>Bidang</th><th>Judul</th><th>Anggota</th><th>Paper</th><th>Foto</th><th>Tautan</th><th>Catatan</th></tr></thead><tbody>";
+      groups.forEach(function (g) {
+        var notes = [];
+        if (!parsed[g.no]) notes.push('<span class="good">data lama</span>');
+        if (String(g.bidang || "").charAt(0) === "?") notes.push('<span class="warn">bidang tidak dikenal: ' + esc(g.bidang.slice(1)) + "</span>");
+        if (!g.judul) notes.push('<span class="warn">judul kosong</span>');
+        if (g.judul && !g.paper) notes.push('<span class="warn">tanpa PDF</span>');
+        if (g.no > (SITE.jumlahKelompok || 99)) notes.push('<span class="warn">nomor melebihi jumlah kelompok</span>');
+        html += '<tr><td class="num">' + g.no + "</td><td>" + esc(g.bidang || "–") + "</td><td>" + esc(g.judul || "–") + '</td><td class="num">' + (g.anggota || []).length +
+          "</td><td>" + (g.paper ? "ada" : "–") + '</td><td class="num">' + (g.dokumentasi || []).length + '</td><td class="num">' + (g.luaran || []).length + "</td><td>" + notes.join("<br>") + "</td></tr>";
+      });
+      $("#preview").innerHTML = html + "</tbody>";
+      groups.forEach(function (g) { if (String(g.bidang || "").charAt(0) === "?") g.bidang = ""; });
+
+      result = build(groups);
+      $("#out").value = result;
+      $("#preview-card").hidden = false;
+      $("#out-card").hidden = false;
+      status.className = "status ok";
+      status.textContent = Object.keys(parsed).length + " kelompok terbaca dari CSV" + (skipped ? ", " + skipped + " baris dilewati karena tanpa nomor" : "") + ".";
+    }
+
+    $("#file").addEventListener("change", function (e) {
+      var f = e.target.files[0];
+      if (!f) return;
+      var rd = new FileReader();
+      rd.onload = function () { $("#csv").value = rd.result; run(); };
+      rd.readAsText(f);
+    });
+    $("#convert").addEventListener("click", run);
+    $("#download").addEventListener("click", function () {
+      if (!result) return;
+      var a = document.createElement("a");
+      a.href = URL.createObjectURL(new Blob([result], { type: "text/javascript" }));
+      a.download = "kelompok.js";
+      document.body.appendChild(a); a.click(); a.remove();
+    });
+    $("#copy").addEventListener("click", function () {
+      if (!result) return;
+      var s = $("#copy-status");
+      if (navigator.clipboard) {
+        navigator.clipboard.writeText(result).then(function () { s.textContent = "Tersalin."; }, function () { $("#out").select(); s.textContent = "Teks sudah dipilih, tekan Ctrl+C."; });
+      } else { $("#out").select(); s.textContent = "Teks sudah dipilih, tekan Ctrl+C."; }
+    });
+  })();
+  </script>
+</body>
+</html>
