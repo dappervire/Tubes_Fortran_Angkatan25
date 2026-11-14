@@ -502,7 +502,7 @@ window.KELOMPOK = [
   },
   {
     no: 21,
-    bidang: "",
+    bidang: "DSIS",
     judul: "Analisis Kesenjangan antara Persepsi Diri dan Kompetensi Aktual Mahasiswa dalam Pemrograman: Studi Literatur",
     abstrak:
       "Kemampuan pemrograman merupakan salah satu kompetensi penting bagi mahasiswa Informatika. " +
