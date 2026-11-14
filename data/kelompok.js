@@ -335,21 +335,34 @@ window.KELOMPOK = [
     paper: "", luaran: [], dokumentasi: []
   },
   {
-    no: 11, bidang: "ORMAWA", judul: "", abstrak: "", kataKunci: [],
+    no: 11,
+    bidang: "ORMAWA",
+    judul: "Identifikasi Faktor-faktor yang Memengaruhi Minat dan Keterlibatan Mahasiswa dalam Mengikuti Organisasi",
+    abstrak:
+      "Rendahnya minat dan keterlibatan mahasiswa dalam kegiatan organisasi maupun kaderisasi sering disebabkan oleh ketidaksesuaian program dengan minat, potensi, dan kebutuhan mahasiswa. " +
+      "Penelitian ini bertujuan mengidentifikasi faktor internal dan eksternal yang memengaruhi minat serta keterlibatan mahasiswa dalam berorganisasi, sekaligus mengevaluasi kesesuaian kegiatan organisasi terhadap preferensi mereka. " +
+      "Metode yang digunakan adalah analisis deskriptif untuk memaparkan faktor dominan keterlibatan mahasiswa, disertai pengujian fungsionalitas dan kesesuaian informasi pada website pemetaan minat organisasi yang dikembangkan. " +
+      "Hasilnya menunjukkan bahwa faktor internal berupa kesesuaian minat dan motivasi pengembangan diri, serta faktor eksternal berupa relevansi program kerja organisasi, menjadi pengaruh utama dalam keputusan mahasiswa berorganisasi. " +
+      "Pendekatan berbasis pemetaan minat dinilai mampu meningkatkan relevansi pilihan kegiatan bagi mahasiswa dan mendorong partisipasi aktif.",
+    kataKunci: ["keterlibatan mahasiswa", "minat organisasi", "faktor internal dan eksternal", "kuantitatif deskriptif", "pemetaan minat"],
     anggota: [
-      { nama: "Ni Wayan Sharira Purnamasari Setiawan", nim: "" },
       { nama: "Zahro Khoirur Rohma", nim: "" },
       { nama: "Rayhan Muzab Fauzan", nim: "" },
-      { nama: "Haziq Muhammad Wirdas", nim: "" },
       { nama: "Aghnia Fasya Launita", nim: "" },
-      { nama: "Muhammad Keiza Benjamin Andri Purnama", nim: "" },
       { nama: "Fransiskus Brama Wijaya", nim: "" },
-      { nama: "Lucky Javier Ridwanullah", nim: "" },
       { nama: "Abram Bagus Bagaskara", nim: "" },
-      { nama: "Naufal Asa Malika", nim: "" },
-      { nama: "Andi Reski Ramadhani", nim: "" }
+      { nama: "Haziq Muhammad Wirdas", nim: "" },
+      { nama: "Muhammad Keiza Benjamin Andri Purnama", nim: "" },
+      { nama: "Andi Reski Ramadhani", nim: "" },
+      { nama: "Lucky Javier Ridwanullah", nim: "" },
+      { nama: "Ni Wayan Sharira Purnamasari Setiawan", nim: "" },
+      { nama: "Naufal Asa Malika", nim: "" }
     ],
-    paper: "", luaran: [], dokumentasi: []
+    paper: "papers/kelompok-11.pdf",
+    luaran: [
+      { label: "Website SIPEMA", url: "https://sipema-henna.vercel.app/" }
+    ],
+    dokumentasi: []
   },
   {
     no: 12,
@@ -590,9 +603,7 @@ window.KELOMPOK = [
       { nama: "Rizky Alvino Putra", nim: "" },
       { nama: "Muh Alif Fayyaz", nim: "" },
       { nama: "Muhammad Rabbani Al-Kautsar", nim: "" },
-      { nama: "Arshanta Ayu Kusumaningtyas", nim: "" },
-      { nama: "Mikaela Rosa Febriani Linggi", nim: "" },
-      { nama: "Zhafran Atthaurrahman Alezaryan", nim: "" }
+      { nama: "Arshanta Ayu Kusumaningtyas", nim: "" }
     ],
     paper: "papers/kelompok-20.pdf",
     luaran: [
@@ -759,8 +770,7 @@ window.KELOMPOK = [
       { nama: "Muhammad Falih Rizki Prasetyo", nim: "" },
       { nama: "Muhammad Fauzi Ramadhan", nim: "" },
       { nama: "Nadhif Miftah Hibatullah", nim: "" },
-      { nama: "Revan Putra Andrian", nim: "" },
-      { nama: "Varrel Christian Wiranata", nim: "" }
+      { nama: "Revan Putra Andrian", nim: "" }
     ],
     paper: "papers/kelompok-26.pdf",
     luaran: [
@@ -787,9 +797,7 @@ window.KELOMPOK = [
       { nama: "Nathaniel Darius Ahmad Raja Gukguk", nim: "" },
       { nama: "Syifa Khairunnisa", nim: "" },
       { nama: "Maulana Ade Fathurrozaqi", nim: "" },
-      { nama: "Rajwa Naila Arkan", nim: "" },
-      { nama: "Mario Satya Febrian", nim: "" },
-      { nama: "M. Pasya Alfaridzi", nim: "" }
+      { nama: "Rajwa Naila Arkan", nim: "" }
     ],
     paper: "papers/kelompok-27.pdf",
     luaran: [],
