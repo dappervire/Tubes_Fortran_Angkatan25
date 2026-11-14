@@ -90,21 +90,35 @@ window.BIDANG = {
    --------------------------------------------------------------------- */
 window.KELOMPOK = [
   {
-    no: 1, bidang: "SEAL", judul: "", abstrak: "", kataKunci: [],
+    no: 1,
+    bidang: "SEAL",
+    judul: "Perancangan Sistem Antrean Otomatis Berbasis Virtual Waiting Room dengan Mekanisme First-In, First-Out (FIFO) dan Caching pada Portal Akademik saat Pengisian Kartu Rencana Studi (KRS) Mahasiswa",
+    abstrak:
+      "Periode pengisian Kartu Rencana Studi (KRS) pada portal akademik kerap memicu lonjakan akses secara bersamaan akibat batasan waktu registrasi dan persaingan kuota kelas. " +
+      "Tanpa mekanisme pengendalian trafik, seluruh permintaan masuk secara serentak ke server dan diperparah oleh fenomena retry storm (percobaan muat ulang berulang oleh pengguna saat akses gagal), yang mengakibatkan penurunan performa hingga kegagalan layanan. " +
+      "Makalah ini mengusulkan rancangan konseptual sistem antrean otomatis berbasis Virtual Waiting Room sebagai lapisan gerbang (gatekeeper) sebelum permintaan mencapai server utama. " +
+      "Dalam arsitektur yang diusulkan, pengguna yang mengakses sistem melebihi ambang batas kapasitas aman akan diberikan nomor antrean berbasis First-In, First-Out (FIFO) dan diteruskan secara bertahap, didukung oleh mekanisme caching untuk mengurangi beban baca berulang pada data jadwal kelas. " +
+      "Evaluasi konseptual melalui pemodelan alur proses dan analisis komparatif menunjukkan bahwa arsitektur ini berpotensi menjaga stabilitas ketersediaan layanan serta memberikan kepastian giliran akses bagi mahasiswa selama periode puncak pengisian KRS.",
+    kataKunci: ["sistem antrean", "Virtual Waiting Room", "First-In, First-Out (FIFO)", "caching", "Kartu Rencana Studi"],
     anggota: [
-      { nama: "Allysa Mutiara Putri Nababan", nim: "" },
-      { nama: "Ahmad Aldiansyah", nim: "" },
       { nama: "Muhammad Akmal Mursalim", nim: "" },
-      { nama: "I Dewa Gde Bagas Danendra", nim: "" },
-      { nama: "Rizik Dwiko Priyanto", nim: "" },
-      { nama: "Alfito Maulana", nim: "" },
-      { nama: "Alvin Chandra Tanuwijaya", nim: "" },
-      { nama: "I Nyoman Pradnya Wicaksana", nim: "" },
       { nama: "Muhammad Alifiansyah Wibisono", nim: "" },
       { nama: "Muhammad Ikhsan", nim: "" },
-      { nama: "Faizah Ghantari Marasabessy", nim: "" }
+      { nama: "Faizah Ghantari Marasabessy", nim: "" },
+      { nama: "Allysa Mutiara", nim: "" },
+      { nama: "Rizik Dwiko Priyanto", nim: "" },
+      { nama: "I Nyoman Pradnya Wicaksana", nim: "" },
+      { nama: "Ahmad Aldiansyah", nim: "" },
+      { nama: "Alvin Chandra Tanuwijaya", nim: "" },
+      { nama: "Alfito Maulana", nim: "" },
+      { nama: "I Dewa Gede Bagas Danendra", nim: "" }
     ],
-    paper: "", luaran: [], dokumentasi: []
+    paper: "papers/kelompok-01.pdf",
+    luaran: [
+      { label: "Situs presentasi", url: "https://pendragon-eta.vercel.app/" },
+      { label: "Dokumentasi kegiatan (Google Drive)", url: "https://drive.google.com/drive/folders/1fho2Zq9NjzRB1T-6GorBkbpJGhvXhCJz" }
+    ],
+    dokumentasi: []
   },
   {
     no: 2, bidang: "SEAL", judul: "", abstrak: "", kataKunci: [],
@@ -237,7 +251,9 @@ window.KELOMPOK = [
       { nama: "Miracle Ezekiel Rahakbauw", nim: "" }
     ],
     paper: "papers/kelompok-08.pdf",
-    luaran: [],
+    luaran: [
+      { label: "Dokumentasi kegiatan (Google Drive)", url: "https://drive.google.com/drive/folders/1_x-XNncd2QYKGZMU739qo-RtbYtZymDZ?usp=sharing" }
+    ],
     dokumentasi: []
   },
   {
@@ -341,21 +357,30 @@ window.KELOMPOK = [
     paper: "", luaran: [], dokumentasi: []
   },
   {
-    no: 14, bidang: "DSIS", judul: "", abstrak: "", kataKunci: [],
+    no: 14,
+    bidang: "DSIS",
+    judul: "Klasifikasi Citra Sampah untuk Pemilahan Organik, Anorganik, B3, dan Residu Menggunakan Transfer Learning EfficientNet-B0 pada Gabungan Dataset Kaggle dan RealWaste",
+    abstrak:
+      "Pemilahan sampah di sumber masih sering gagal karena orang ragu menentukan tempat sampah yang tepat. " +
+      "Penelitian ini membangun sistem yang menerima satu foto sampah dan menghasilkan jenis materialnya beserta kategori tempat sampah: organik, anorganik, B3, atau residu. " +
+      "Sebagian besar dataset publik berisi foto produk berlatar polos, sehingga model yang tampak sangat akurat pada data sejenis belum tentu andal pada sampah nyata yang kotor, lecek, dan berlatar beragam. " +
+      "Kami menggabungkan dataset Kaggle Garbage Classification dan RealWaste, membuang duplikat serta label yang bertentangan, menyusun sembilan kelas yang dipetakan ke empat tempat sampah, dan membagi data tanpa kebocoran antar-subset. " +
+      "EfficientNet-B0 pralatih ImageNet di-fine-tune dalam dua tahap, lalu dilengkapi ambang keyakinan dan aplikasi web yang menyimpan koreksi pengguna untuk pelatihan ulang. " +
+      "Model yang dilatih hanya dengan data Kaggle mencapai akurasi 96,8% pada data uji Kaggle, tetapi turun menjadi 54,5% pada foto sampah nyata RealWaste. " +
+      "Penambahan RealWaste ke data latih menaikkan akurasi pada foto sampah nyata menjadi 93,8%, dengan akurasi keseluruhan 95,7% untuk sembilan kelas dan 98,5% untuk empat kategori tempat sampah.",
+    kataKunci: ["klasifikasi sampah", "transfer learning", "EfficientNet", "domain gap", "RealWaste", "pemilahan sampah"],
     anggota: [
+      { nama: "Luthfi Ra'is Wiguna", nim: "" },
+      { nama: "I Gede Ananda Bela Persada", nim: "" },
+      { nama: "Affan Mangi Layana", nim: "" },
+      { nama: "Fauzan Yusuf Habibie", nim: "" },
       { nama: "Aninda Marethaningtyas Cessary Putri Bellammy", nim: "" },
       { nama: "Tsara Naila Alfikri", nim: "" },
-      { nama: "Affan Mangi Layana", nim: "" },
-      { nama: "Rangga Ramadhani Widjaja", nim: "" },
-      { nama: "Muhammad Gathan Algifari", nim: "" },
-      { nama: "Fauzan Yusuf Habibie", nim: "" },
-      { nama: "Luthfi Ra'is Wiguna", nim: "" },
-      { nama: "Farel Adsenov Situmorang", nim: "" },
-      { nama: "I Gede Ananda Bela Persada", nim: "" },
-      { nama: "Mirza Zulfadhli Amin", nim: "" },
-      { nama: "Muhamad Syahdan Ikhwanul Muslim", nim: "" }
+      { nama: "Farel Adsenov Situmorang", nim: "" }
     ],
-    paper: "", luaran: [], dokumentasi: []
+    paper: "papers/kelompok-14.pdf",
+    luaran: [],
+    dokumentasi: []
   },
   {
     no: 15, bidang: "SEAL", judul: "", abstrak: "", kataKunci: [],
@@ -476,21 +501,30 @@ window.KELOMPOK = [
     paper: "", luaran: [], dokumentasi: []
   },
   {
-    no: 21, bidang: "", judul: "", abstrak: "", kataKunci: [],
+    no: 21,
+    bidang: "",
+    judul: "Analisis Kesenjangan antara Persepsi Diri dan Kompetensi Aktual Mahasiswa dalam Pemrograman: Studi Literatur",
+    abstrak:
+      "Kemampuan pemrograman merupakan salah satu kompetensi penting bagi mahasiswa Informatika. " +
+      "Namun, penilaian kemampuan secara mandiri belum tentu mencerminkan tingkat penguasaan keterampilan yang sebenarnya. " +
+      "Kondisi ini dapat menimbulkan kesenjangan antara persepsi mahasiswa terhadap kemampuan dirinya dan kompetensi yang ditunjukkan melalui evaluasi. " +
+      "Kesenjangan tersebut penting dikaji karena pemahaman yang kurang tepat terhadap kemampuan diri dapat memengaruhi proses belajar dan pengembangan keterampilan pemrograman. " +
+      "Oleh karena itu, diperlukan analisis untuk memahami hubungan antara penilaian diri dan kompetensi aktual mahasiswa. " +
+      "Penelitian ini menggunakan metode kajian literatur dengan mengumpulkan dan menganalisis penelitian terdahulu yang membahas penilaian kemampuan pemrograman secara mandiri serta pengukuran kompetensi melalui evaluasi atau tes praktik. " +
+      "Hasil penelitian dibandingkan untuk mengidentifikasi pola kesenjangan dan faktor-faktor yang berkaitan dengannya. " +
+      "Kajian ini diarahkan untuk mengidentifikasi kesesuaian antara persepsi kemampuan dan kompetensi aktual mahasiswa, serta faktor yang berpotensi memengaruhi perbedaannya. " +
+      "Hasil penelitian diharapkan memberikan gambaran mengenai pentingnya evaluasi kemampuan yang objektif dalam proses pembelajaran pemrograman.",
+    kataKunci: ["pemrograman", "persepsi diri", "kompetensi", "mahasiswa", "penilaian kemampuan", "kajian literatur"],
     anggota: [
-      { nama: "Moh. Qalbi Tryansyah", nim: "" },
       { nama: "Tifany Alisya Maharani", nim: "" },
-      { nama: "Syaira Luthfiyah Ilham", nim: "" },
+      { nama: "Alif Fajar Sya'ban", nim: "" },
+      { nama: "Moh. Qalbi Tryansyah", nim: "" },
       { nama: "Rizqy Putranto", nim: "" },
-      { nama: "Muhammad Farhan Putra Maulana", nim: "" },
-      { nama: "Danendra Ibrahim Susilo", nim: "" },
-      { nama: "Kayla Sabrina Rayghita", nim: "" },
-      { nama: "Arkananta Rasyad Nayottama", nim: "" },
-      { nama: "Anas Abdurrahim", nim: "" },
-      { nama: "Rifqi Nadra Fitriawan", nim: "" },
-      { nama: "Alif Fajar Sya'ban", nim: "" }
+      { nama: "Syaira Luthfiyah Ilham", nim: "" }
     ],
-    paper: "", luaran: [], dokumentasi: []
+    paper: "papers/kelompok-21.pdf",
+    luaran: [],
+    dokumentasi: []
   },
   {
     no: 22,
