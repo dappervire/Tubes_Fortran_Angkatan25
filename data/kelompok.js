@@ -167,21 +167,30 @@ window.KELOMPOK = [
     paper: "", luaran: [], dokumentasi: []
   },
   {
-    no: 4, bidang: "SEAL", judul: "", abstrak: "", kataKunci: [],
+    no: 4,
+    bidang: "SEAL",
+    judul: "Analisis Kebutuhan Aplikasi AgendaKu (Studi Kasus: Dashboard To-Do List)",
+    abstrak:
+      "Pengelolaan waktu dan tugas sering menjadi kendala bagi pelajar, mahasiswa, maupun masyarakat umum yang harus membagi perhatian antara kuliah, organisasi, pekerjaan, dan kegiatan pribadi, sehingga tugas terlewat dan prioritas sulit ditentukan. " +
+      "Untuk mengatasinya, dikembangkan AgendaKu, aplikasi web dashboard to-do list berbasis HTML, CSS, dan JavaScript yang dapat diakses melalui browser tanpa instalasi. " +
+      "AgendaKu menyediakan pengelolaan akun dan agenda lengkap dengan kategori, prioritas, sub-tugas, dan pengulangan jadwal, yang ditampilkan dalam dashboard ringkasan, kalender bulanan interaktif, serta papan Kanban dengan filter. " +
+      "Aplikasi juga dilengkapi statistik progres, timer Pomodoro, catatan instan, pengingat melalui notifikasi browser dan alarm suara, serta pencadangan dan ekspor data. " +
+      "Laporan ini memuat analisis kebutuhan yang mencakup deskripsi perangkat lunak, kelas pengguna, sepuluh kebutuhan fungsional, use case diagram, dan skenario use case sebagai dasar pengembangan aplikasi.",
+    kataKunci: ["AgendaKu", "manajemen agenda", "to-do list", "dashboard", "analisis kebutuhan", "produktivitas"],
     anggota: [
       { nama: "Agung Kaleb Sasauw", nim: "" },
       { nama: "Muhamad Habibi Nur Rahman", nim: "" },
-      { nama: "Mahesa Arga Wibisono", nim: "" },
       { nama: "M. Ilhan Khafidhah", nim: "" },
       { nama: "Muhammad Zuhdi Ulwan", nim: "" },
-      { nama: "Aisha Haya Az-Zahra Khoirunnisa", nim: "" },
       { nama: "Endra", nim: "" },
       { nama: "R Bhumi Niscala Nirwasita", nim: "" },
       { nama: "Khalid Ahmad Naufal Iswahyudi", nim: "" },
       { nama: "Visky Muji Ramadhan", nim: "" },
       { nama: "Aditya Putra Permana", nim: "" }
     ],
-    paper: "", luaran: [], dokumentasi: []
+    paper: "papers/kelompok-04.pdf",
+    luaran: [],
+    dokumentasi: []
   },
   {
     no: 5,
@@ -714,7 +723,7 @@ window.KELOMPOK = [
   },
   {
     no: 24,
-    bidang: "",
+    bidang: "DSIS",
     judul: "EduPath: Personalized Learning Recommendation System Based on Students' Understanding Levels",
     abstrak:
       "Mahasiswa memiliki tingkat pemahaman yang beragam ketika mempelajari mata kuliah Algoritma dan Pemrograman, dan yang belum menguasai konsep dasar berisiko kesulitan memahami materi lanjutan tanpa menyadari topik mana yang perlu dipelajari ulang. " +
