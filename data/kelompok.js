@@ -713,22 +713,33 @@ window.KELOMPOK = [
     dokumentasi: []
   },
   {
-    no: 24, bidang: "", judul: "", abstrak: "", kataKunci: [],
+    no: 24,
+    bidang: "",
+    judul: "EduPath: Personalized Learning Recommendation System Based on Students' Understanding Levels",
+    abstrak:
+      "Mahasiswa memiliki tingkat pemahaman yang beragam ketika mempelajari mata kuliah Algoritma dan Pemrograman, dan yang belum menguasai konsep dasar berisiko kesulitan memahami materi lanjutan tanpa menyadari topik mana yang perlu dipelajari ulang. " +
+      "Evaluasi konvensional yang hanya menampilkan skor akhir belum mampu mengidentifikasi kelemahan pada setiap topik secara spesifik, padahal materinya tersusun berjenjang dari variabel dan tipe data hingga percabangan, perulangan, dan fungsi. " +
+      "Penelitian ini mengusulkan EduPath, prototipe aplikasi web yang menerapkan Rule-Based Recommendation dengan mengolah hasil kuis diagnostik per topik dan memetakan skor ke kategori pemahaman serta rekomendasi belajar yang relevan. " +
+      "EduPath dibangun sebagai prototipe client-side dengan HTML, CSS, dan JavaScript, dengan fitur pemilihan materi, kuis diagnostik, perhitungan skor otomatis, rekomendasi belajar terurut prioritas, dan pemantauan progres. " +
+      "Pengujian Black Box Testing menunjukkan seluruh alur utama berjalan sesuai rancangan, meskipun efektivitas terhadap peningkatan hasil belajar jangka panjang belum diukur.",
+    kataKunci: ["personalized learning", "sistem rekomendasi pembelajaran", "rule-based recommendation", "evaluasi formatif", "algoritma dan pemrograman"],
     anggota: [
       { nama: "Muhammad Bintang Nabeel", nim: "" },
-      { nama: "Fauzan Rizky Fernanda", nim: "" },
-      { nama: "Muhamad Sahruwardi", nim: "" },
-      { nama: "Mochamad Basith Elangjava", nim: "" },
-      { nama: "Hanifah Harnanda Tridianti", nim: "" },
       { nama: "Femalia Anindya Triazkamila", nim: "" },
-      { nama: "Al Fathir Abimanyu Gazaali", nim: "" },
-      { nama: "Gaza Raushan Fikri", nim: "" },
-      { nama: "Rafi Putra Effendi", nim: "" },
+      { nama: "Mochamad Basith ElangJava", nim: "" },
+      { nama: "Hanifah Harnanda Tridianti", nim: "" },
       { nama: "Adra Athallah Octaviadi", nim: "" },
+      { nama: "Muhamad Sahruwardi", nim: "" },
+      { nama: "Fauzan Rizky Fernanda", nim: "" },
       { nama: "Aria Chrisna Bayu", nim: "" },
-      { nama: "Renanda Dava Putra Rasyid", nim: "" }
+      { nama: "Al Fathir Abimanyu Gazaali", nim: "" },
+      { nama: "Rafi Putra Effendi", nim: "" },
+      { nama: "Renanda Dava Putra Rasyid", nim: "" },
+      { nama: "Gaza Raushan Fikri", nim: "" }
     ],
-    paper: "", luaran: [], dokumentasi: []
+    paper: "papers/kelompok-24.pdf",
+    luaran: [],
+    dokumentasi: []
   },
   {
     no: 25,
