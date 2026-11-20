@@ -327,21 +327,30 @@ window.KELOMPOK = [
     dokumentasi: []
   },
   {
-    no: 10, bidang: "", judul: "", abstrak: "", kataKunci: [],
+    no: 10,
+    bidang: "ORMAWA",
+    judul: "Peran Organisasi Mahasiswa dalam Mengembangkan Kemampuan dan Pengalaman Mahasiswa melalui ORMAWA EXPO",
+    abstrak:
+      "Organisasi Mahasiswa (ORMAWA) menjadi salah satu tempat bagi mahasiswa untuk belajar dan mendapatkan pengalaman di luar perkuliahan, seperti bekerja sama, berkomunikasi, membagi tugas, memimpin kegiatan, dan bertanggung jawab atas pekerjaan. " +
+      "Namun, tidak semua mahasiswa mengetahui organisasi apa saja yang ada di kampus atau kegiatan apa yang bisa mereka ikuti. " +
+      "Mini paper ini membahas gagasan ORMAWA EXPO, kegiatan yang mempertemukan organisasi dengan mahasiswa melalui stan informasi, sesi berbagi pengalaman, permainan, dan pameran karya. " +
+      "Rancangan kegiatan disusun berdasarkan studi literatur dan perlu dilengkapi dengan survei serta observasi sebelum dilaksanakan. " +
+      "Kegiatan ini diharapkan membantu mahasiswa mengenal organisasi yang sesuai dengan minat mereka sekaligus membuka kesempatan untuk berinteraksi dan berkolaborasi.",
+    kataKunci: ["organisasi mahasiswa", "pengembangan kompetensi", "kepemimpinan", "kreativitas", "pameran organisasi"],
     anggota: [
-      { nama: "Rakha Rizqullah Siregar", nim: "" },
       { nama: "Mutya Hazna", nim: "" },
-      { nama: "Wira Putro Hartono", nim: "" },
-      { nama: "Marchella Yuniarsan", nim: "" },
-      { nama: "Opra Ridho Illahi", nim: "" },
-      { nama: "Michael Vindenovan Limbong", nim: "" },
-      { nama: "Rafael Putra Ananta Saragih", nim: "" },
-      { nama: "Naida Iskandar", nim: "" },
-      { nama: "Irham Maulana", nim: "" },
+      { nama: "Rakha Rizqullah Siregar", nim: "" },
       { nama: "Muhammad Ghifran Febrian", nim: "" },
+      { nama: "Irham Maulana", nim: "" },
+      { nama: "Marchella Yuniarsan", nim: "" },
+      { nama: "Wira Putro Hartono", nim: "" },
+      { nama: "Opra Ridho Illahi", nim: "" },
+      { nama: "Rafael Putra Ananta Saragih", nim: "" },
       { nama: "Fikri Ahmad Fadhilah", nim: "" }
     ],
-    paper: "", luaran: [], dokumentasi: []
+    paper: "papers/kelompok-10.pdf",
+    luaran: [],
+    dokumentasi: []
   },
   {
     no: 11,
